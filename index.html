@@ -1,3 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arfaa Khan – Business, Finance & Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f5f8; --surface:#ffffff; --ink:#14213d; --muted:#4e5a70; --line:#d5dce6;
+  --saffron:#f2a900; --madder:#c2334d; --teal:#1f7a8c;
+  --head:'Bricolage Grotesque','Segoe UI',Helvetica,Arial,sans-serif;
+  --body:'Newsreader',Georgia,'Times New Roman',serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0e1626;--surface:#16213a;--ink:#eef2f8;--muted:#a3afc4;--line:#2a3855;--saffron:#f5b72e;--madder:#e8657c;--teal:#4fb3c6}
+}
+:root[data-theme="dark"]{--bg:#0e1626;--surface:#16213a;--ink:#eef2f8;--muted:#a3afc4;--line:#2a3855;--saffron:#f5b72e;--madder:#e8657c;--teal:#4fb3c6}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.15rem;line-height:1.6}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-size:clamp(3.4rem,15vw,8rem);font-weight:800;letter-spacing:-.04em}
+h2{font-size:1.8rem;font-weight:800;letter-spacing:-.02em;margin-bottom:1.25rem}
+h3{font-size:1.2rem;font-weight:500}
+p{margin:0 0 1rem;max-width:62ch}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+
+/* hero */
+.hero{padding:4rem 0 3rem}
+.role{font-family:var(--head);font-size:1.25rem;color:var(--muted);margin:1.25rem 0 1.5rem}
+.swatches{display:flex;gap:.4rem;margin:2rem 0 .6rem}
+.swatches span{height:2.4rem;flex:1;border-radius:2px 2px 14px 2px}
+.swatches span:nth-child(1){background:var(--saffron)}
+.swatches span:nth-child(2){background:var(--madder)}
+.swatches span:nth-child(3){background:var(--teal)}
+.swatches span:nth-child(4){background:var(--ink)}
+.caption{font-size:.95rem;color:var(--muted);margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{font-family:var(--head);font-weight:500;font-size:1rem;text-decoration:none;padding:.7rem 1.2rem;border:2px solid var(--ink);border-radius:999px;transition:background .15s,color .15s}
+.btn.main{background:var(--ink);color:var(--bg)}
+button.btn{background:transparent;color:var(--ink);cursor:pointer;font-size:1rem}
+.btn[hidden]{display:none}
+.btn:hover{background:var(--saffron);border-color:var(--saffron);color:#14213d}
+
+/* experience + project entries */
+.entry{display:grid;gap:.4rem;padding:1.25rem 0;border-bottom:1px dashed var(--line)}
+.entry:last-child{border-bottom:0}
+.entry ul{margin:.4rem 0 0;padding-left:1.2rem}
+.entry li{margin-bottom:.35rem}
+.tag{font-family:var(--head);font-size:.9rem;color:var(--muted)}
+.tools{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.chip{font-family:var(--head);font-size:.9rem;padding:.2rem .7rem;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.stat{font-family:var(--head);font-weight:800;font-size:2.4rem;color:var(--madder)}
+
+/* certifications */
+.groups{display:grid;gap:1rem}
+@media(min-width:700px){.groups{grid-template-columns:repeat(3,1fr)}}
+.group{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--teal);padding:1rem 1.1rem;border-radius:2px 2px 16px 2px}
+.group:nth-child(1){border-top-color:var(--saffron)}
+.group:nth-child(2){border-top-color:var(--teal)}
+.group:nth-child(3){border-top-color:var(--madder)}
+.group h3{margin-bottom:.6rem}
+.group ul{margin:0;padding-left:1.1rem;font-size:1rem}
+.group li{margin-bottom:.4rem}
+
+/* skills + education */
+dl{margin:0}
+dt{font-family:var(--head);font-weight:500;margin-top:1rem}
+dd{margin:.2rem 0 0;color:var(--muted)}
+.table-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:1rem}
+th,td{text-align:left;padding:.7rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--head);font-weight:500;color:var(--muted)}
+
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer h2{font-size:clamp(2rem,8vw,3.2rem)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+  <h1>Arfaa Khan</h1>
+  <p class="role">BBA (Hons.) student in business and finance, working with data in Python and Excel</p>
+  <p>I like work that has to be accurate: records, compliance, and numbers that have to add up. I’m looking for a corporate finance or business operations role where I can keep learning and be useful from the first week.</p>
+  <div class="swatches" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <p class="caption">Outside of work I paint, and I keep a portfolio file of my commercial art.</p>
+  <div class="btns">
+    <a class="btn main" href="mailto:Khanarfaa03@gmail.com">Email me</a>
+    <a class="btn" href="Arfaa_Khan_Resume.docx" download>Download resume</a>
+    <a class="btn" href="https://github.com/khanarfaa03" target="_blank" rel="noopener">View GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/arfaa-khan-b2a938375" target="_blank" rel="noopener">View LinkedIn</a>
+  </div>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <article class="entry">
+    <h3>Intern, Uday Foundation (NGO)</h3>
+    <ul>
+      <li>Managed an operational database and tracked data day to day.</li>
+      <li>Prepared tax compliance documents and kept administrative records.</li>
+      <li>Coordinated with different teams and handled professional communication.</li>
+    </ul>
+  </article>
+  <article class="entry">
+    <h3>Event organiser, Higher Secondary School</h3>
+    <ul><li>Organised and co-managed school events with a team, from planning to the day itself.</li></ul>
+  </article>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <article class="entry">
+    <div class="stat">12</div>
+    <h3>Data Analytics and Machine Learning Portfolio</h3>
+    <p>Twelve analysis projects built in Python, each taking a dataset from cleaning through to a conclusion.</p>
+    <ul>
+      <li>Exploratory data analysis and visualisation</li>
+      <li>Hypothesis testing, linear and logistic regression</li>
+      <li>Classification, K-Means clustering and data integration</li>
+    </ul>
+    <div class="tools"><a class="chip" href="https://github.com/khanarfaa03" target="_blank" rel="noopener">See the code on GitHub</a><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">SciPy</span><span class="chip">Seaborn</span></div>
+  </article>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="groups">
+    <div class="group">
+      <h3>Finance and management</h3>
+      <ul><li>Banking &amp; Finance Management, IISDT</li><li>Certificate of Excellence in Financial Literacy, NISM</li></ul>
+    </div>
+    <div class="group">
+      <h3>Data, AI and governance</h3>
+      <ul><li>Data Governance Fundamentals, DataCamp</li><li>AI Leadership Fundamentals</li><li>GDPR &amp; Data Privacy Fundamentals Specialist</li><li>EU AI Act Literacy Specialist</li></ul>
+    </div>
+    <div class="group">
+      <h3>Design and marketing</h3>
+      <ul><li>Adobe Graphic Designer Professional</li><li>Adobe Marketing Specialist Professional</li><li>Adobe Content Creator Professional</li></ul>
+    </div>
+  </div>
+  <p class="caption" style="margin-top:1rem">Adobe certifications were earned through Coursera. I have also joined workshops run by NISM, Adobe, Coursera and the Nasscom Foundation.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl>
+    <dt>Financial and analytical</dt>
+    <dd>Financial management, data management, data analysis and visualisation, hypothesis testing</dd>
+    <dt>Technical</dt>
+    <dd>Python (Pandas, SciPy, Seaborn), Microsoft Excel, Word and PowerPoint, operational database management</dd>
     <dt>Working with others</dt>
     <dd>Professional communication, data tracking and documentation, teamwork</dd>
   </dl>
@@ -33,4 +194,3 @@
 </footer>
 </body>
 </html>
-
