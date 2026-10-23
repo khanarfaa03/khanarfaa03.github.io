@@ -17,9 +17,9 @@
         extend: {
           colors: {
             brandYellow: '#f59e0b',
-            brandYellowLight: '#fef3c7',
             brandRed: '#dc2626',
-            brandRedDark: '#991b1b',
+            brandRedDark: '#7f1d1d',
+            brandRedDeep: '#450a0a',
             darkText: '#0f172a',
           },
           fontFamily: {
@@ -33,50 +33,50 @@
   
   <style>
     body {
-      background-color: #ffffff;
+      background-color: #450a0a;
       color: #0f172a;
       scroll-behavior: smooth;
     }
   </style>
 </head>
-<body class="font-sans antialiased text-slate-900 bg-white text-sm">
+<body class="font-sans antialiased text-slate-900 bg-red-950 text-sm">
 
   <!-- TOP NAVIGATION BAR -->
-  <nav class="sticky top-0 z-50 bg-amber-400 border-b-2 border-red-600 shadow-sm">
+  <nav class="sticky top-0 z-50 bg-red-900 border-b-2 border-amber-400 shadow-md">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
         <!-- Logo -->
         <div class="flex items-center space-x-2">
-          <div class="w-8 h-8 rounded-full bg-red-600 text-white font-black text-sm flex items-center justify-center shadow">
+          <div class="w-8 h-8 rounded-full bg-amber-400 text-slate-900 font-black text-sm flex items-center justify-center shadow">
             AK
           </div>
-          <span class="font-serif italic font-bold text-xl tracking-tight text-slate-900">
-            Arfaa<span class="text-red-600">.</span>Khan
+          <span class="font-serif italic font-bold text-xl tracking-tight text-white">
+            Arfaa<span class="text-amber-400">.</span>Khan
           </span>
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden lg:flex items-center space-x-5 text-[11px] font-bold uppercase tracking-wider text-slate-900">
-          <a href="#intro" class="hover:text-red-700 transition-colors">Intro</a>
-          <a href="#skills" class="hover:text-red-700 transition-colors">Skills</a>
-          <a href="#certifications" class="hover:text-red-700 transition-colors">Certifications</a>
-          <a href="#projects" class="hover:text-red-700 transition-colors">12 Python Projects</a>
-          <a href="#experience" class="hover:text-red-700 transition-colors">Experience & Report</a>
-          <a href="#education" class="hover:text-red-700 transition-colors">Education</a>
+        <div class="hidden lg:flex items-center space-x-5 text-[11px] font-bold uppercase tracking-wider text-slate-200">
+          <a href="#intro" class="hover:text-amber-400 transition-colors">Intro</a>
+          <a href="#skills" class="hover:text-amber-400 transition-colors">Skills</a>
+          <a href="#certifications" class="hover:text-amber-400 transition-colors">Certifications</a>
+          <a href="#projects" class="hover:text-amber-400 transition-colors">12 Python Projects</a>
+          <a href="#experience" class="hover:text-amber-400 transition-colors">Experience & Report</a>
+          <a href="#education" class="hover:text-amber-400 transition-colors">Education</a>
         </div>
 
         <!-- Top Action Links -->
         <div class="flex items-center space-x-1.5">
-          <a href="mailto:khanarfaa03@gmail.com" class="px-2.5 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow transition-all flex items-center space-x-1">
+          <a href="mailto:khanarfaa03@gmail.com" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-slate-100 text-red-900 font-bold text-xs shadow transition-all flex items-center space-x-1">
             <i class="fa-solid fa-envelope text-[10px]"></i>
             <span class="hidden sm:inline">Email</span>
           </a>
-          <a href="https://github.com/khanarfaa03" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold text-xs shadow transition-all flex items-center space-x-1">
+          <a href="https://github.com/khanarfaa03" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold text-xs shadow transition-all flex items-center space-x-1">
             <i class="fa-brands fa-github text-[10px]"></i>
             <span class="hidden sm:inline">GitHub</span>
           </a>
-          <a href="https://khanarfaa03.github.io" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-white border border-red-600 text-red-600 font-bold text-xs hover:bg-red-50 transition-all flex items-center space-x-1">
+          <a href="https://khanarfaa03.github.io" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-transparent border border-amber-400 text-amber-400 font-bold text-xs hover:bg-amber-400/10 transition-all flex items-center space-x-1">
             <i class="fa-solid fa-globe text-[10px]"></i>
             <span class="hidden sm:inline">Website</span>
           </a>
@@ -87,11 +87,11 @@
   </nav>
 
   <!-- 1. INTRO & EXPLANATION SECTION -->
-  <section id="intro" class="py-12 bg-amber-50 border-b-2 border-amber-200">
+  <section id="intro" class="py-12 bg-red-950 border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-amber-400 p-6 sm:p-10 rounded-2xl border-2 border-red-600 shadow-lg space-y-4">
+      <div class="bg-white p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-2xl space-y-4">
         
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-600 text-white font-bold text-[11px] uppercase tracking-wider">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-700 text-white font-bold text-[11px] uppercase tracking-wider">
           <span>4-Year BBA (Hons.) Candidate — Business, Finance & Data</span>
         </div>
 
@@ -103,13 +103,13 @@
           "BBA (Hons.) student in business and finance, working with data in Python and Excel."
         </p>
 
-        <p class="text-xs sm:text-sm text-slate-900 leading-relaxed font-normal max-w-3xl">
+        <p class="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal max-w-3xl">
           I like work that has to be accurate: records, compliance, and numbers that have to add up. I'm looking for a corporate finance or business operations role where I can keep learning and be useful from the first week. Outside of work I paint, and I keep a portfolio file of my commercial art.
         </p>
 
         <!-- Top Links Header Bar -->
         <div class="pt-2 flex flex-wrap items-center gap-2">
-          <a href="mailto:khanarfaa03@gmail.com" class="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow transition-all flex items-center space-x-1.5">
+          <a href="mailto:khanarfaa03@gmail.com" class="px-3.5 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow transition-all flex items-center space-x-1.5">
             <i class="fa-solid fa-envelope"></i>
             <span>khanarfaa03@gmail.com</span>
           </a>
@@ -117,11 +117,11 @@
             <i class="fa-brands fa-github"></i>
             <span>GitHub Portfolio</span>
           </a>
-          <a href="https://khanarfaa03.github.io" target="_blank" class="px-3.5 py-2 rounded-xl bg-white border border-red-600 text-red-600 font-bold text-xs hover:bg-red-50 shadow transition-all flex items-center space-x-1.5">
+          <a href="https://khanarfaa03.github.io" target="_blank" class="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold text-xs shadow transition-all flex items-center space-x-1.5">
             <i class="fa-solid fa-globe"></i>
             <span>khanarfaa03.github.io</span>
           </a>
-          <a href="#" class="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold text-xs border border-slate-900 transition-all flex items-center space-x-1.5">
+          <a href="https://www.linkedin.com/in/arfaa-khan-b2a938375?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="px-3.5 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs transition-all flex items-center space-x-1.5">
             <i class="fa-brands fa-linkedin"></i>
             <span>LinkedIn Profile</span>
           </a>
@@ -132,49 +132,49 @@
   </section>
 
   <!-- 2. SKILLS SECTION -->
-  <section id="skills" class="py-12 bg-white border-b-2 border-amber-200">
+  <section id="skills" class="py-12 bg-red-900 border-b-2 border-red-950">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
-        <span class="w-8 h-1.5 bg-red-600 rounded-full"></span>
-        <span class="text-red-600 font-bold uppercase text-xs tracking-wider">Step 2</span>
+        <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
+        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Step 2</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
         Skills & Core Competencies
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         
         <!-- Financial & Analytical -->
-        <div class="bg-amber-400 p-6 rounded-2xl border border-amber-500 shadow-sm space-y-3 hover:-translate-y-0.5 transition-transform">
-          <div class="w-9 h-9 rounded-xl bg-red-600 text-white flex items-center justify-center text-sm font-bold">
+        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
+          <div class="w-9 h-9 rounded-xl bg-red-700 text-white flex items-center justify-center text-sm font-bold">
             <i class="fa-solid fa-calculator"></i>
           </div>
           <h3 class="font-bold text-base text-slate-900">Financial & Analytical</h3>
-          <p class="text-xs text-slate-900 font-normal leading-relaxed">
+          <p class="text-xs text-slate-700 font-normal leading-relaxed">
             Financial management, statutory tax compliance (Income Tax Form 10BD & 10BE), Section 80G documentation, data management, financial data analysis & visualization, hypothesis testing.
           </p>
         </div>
 
         <!-- Technical -->
-        <div class="bg-amber-400 p-6 rounded-2xl border border-red-600 shadow-sm space-y-3 hover:-translate-y-0.5 transition-transform">
+        <div class="bg-white p-6 rounded-2xl border-2 border-red-600 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
           <div class="w-9 h-9 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-sm font-bold">
             <i class="fa-solid fa-code"></i>
           </div>
           <h3 class="font-bold text-base text-slate-900">Technical Capabilities</h3>
-          <p class="text-xs text-slate-900 font-normal leading-relaxed">
+          <p class="text-xs text-slate-700 font-normal leading-relaxed">
             Python (Pandas, SciPy, Seaborn, NumPy), Microsoft Excel (Pivot Tables, VLOOKUP, Advanced Formulas), Word & PowerPoint, operational database management, automated MIS generation.
           </p>
         </div>
 
         <!-- Working With Others -->
-        <div class="bg-amber-400 p-6 rounded-2xl border border-amber-500 shadow-sm space-y-3 hover:-translate-y-0.5 transition-transform">
-          <div class="w-9 h-9 rounded-xl bg-white text-red-600 flex items-center justify-center text-sm font-bold">
+        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
+          <div class="w-9 h-9 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-sm font-bold">
             <i class="fa-solid fa-users"></i>
           </div>
           <h3 class="font-bold text-base text-slate-900">Working With Others</h3>
-          <p class="text-xs text-slate-900 font-normal leading-relaxed">
+          <p class="text-xs text-slate-700 font-normal leading-relaxed">
             Professional communication, data tracking and statutory documentation, teamwork, donor relations, stakeholder management.
           </p>
         </div>
@@ -185,78 +185,78 @@
   </section>
 
   <!-- 3. CERTIFICATIONS SECTION -->
-  <section id="certifications" class="py-12 bg-amber-50 border-b-2 border-amber-200">
+  <section id="certifications" class="py-12 bg-red-950 border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
-        <span class="w-8 h-1.5 bg-red-600 rounded-full"></span>
-        <span class="text-red-600 font-bold uppercase text-xs tracking-wider">Step 3</span>
+        <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
+        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Step 3</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
         Certifications
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         
         <!-- Finance & Management -->
-        <div class="bg-amber-400 p-5 rounded-2xl border border-red-600 shadow-sm space-y-3">
-          <h3 class="font-bold text-sm text-slate-900 border-b border-red-600 pb-1.5 uppercase tracking-wide">
+        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
+          <h3 class="font-bold text-sm text-red-700 border-b border-red-200 pb-1.5 uppercase tracking-wide">
             Finance & Management
           </h3>
-          <ul class="space-y-2 text-xs font-medium text-slate-900">
+          <ul class="space-y-2 text-xs font-medium text-slate-800">
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
+              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
               <span>Banking & Finance Management, IISDT</span>
             </li>
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
+              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
               <span>Certificate of Excellence in Financial Literacy, NISM</span>
             </li>
           </ul>
         </div>
 
         <!-- Data, AI & Governance -->
-        <div class="bg-amber-400 p-5 rounded-2xl border border-slate-900 shadow-sm space-y-3">
-          <h3 class="font-bold text-sm text-slate-900 border-b border-slate-900 pb-1.5 uppercase tracking-wide">
+        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-3">
+          <h3 class="font-bold text-sm text-slate-900 border-b border-slate-200 pb-1.5 uppercase tracking-wide">
             Data, AI & Governance
           </h3>
-          <ul class="space-y-2 text-xs font-medium text-slate-900">
+          <ul class="space-y-2 text-xs font-medium text-slate-800">
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-slate-900 mt-0.5"></i>
+              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
               <span>Data Governance Fundamentals, DataCamp</span>
             </li>
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-slate-900 mt-0.5"></i>
+              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
               <span>AI Leadership Fundamentals</span>
             </li>
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-slate-900 mt-0.5"></i>
+              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
               <span>GDPR & Data Privacy Fundamentals Specialist</span>
             </li>
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-slate-900 mt-0.5"></i>
+              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
               <span>EU AI Act Literacy Specialist</span>
             </li>
           </ul>
         </div>
 
         <!-- Design & Marketing -->
-        <div class="bg-amber-400 p-5 rounded-2xl border border-red-600 shadow-sm space-y-3">
-          <h3 class="font-bold text-sm text-slate-900 border-b border-red-600 pb-1.5 uppercase tracking-wide">
+        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
+          <h3 class="font-bold text-sm text-red-700 border-b border-red-200 pb-1.5 uppercase tracking-wide">
             Design & Marketing
           </h3>
-          <ul class="space-y-2 text-xs font-medium text-slate-900">
+          <ul class="space-y-2 text-xs font-medium text-slate-800">
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
+              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
               <span>Adobe Graphic Designer Professional</span>
             </li>
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
+              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
               <span>Adobe Marketing Specialist Professional</span>
             </li>
             <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
+              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
               <span>Adobe Content Creator Professional</span>
             </li>
           </ul>
@@ -264,7 +264,7 @@
 
       </div>
 
-      <p class="mt-4 text-[11px] font-serif italic text-slate-700 text-center">
+      <p class="mt-4 text-[11px] font-serif italic text-amber-200 text-center">
         Adobe certifications earned through Coursera. Additional workshops completed with NISM, Adobe, Coursera, and Nasscom Foundation.
       </p>
 
@@ -272,47 +272,47 @@
   </section>
 
   <!-- 4. PROJECTS (12 PYTHON PROJECTS PORTFOLIO) SECTION -->
-  <section id="projects" class="py-12 bg-white border-b-2 border-amber-200">
+  <section id="projects" class="py-12 bg-red-900 border-b-2 border-red-950">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
-        <span class="w-8 h-1.5 bg-red-600 rounded-full"></span>
-        <span class="text-red-600 font-bold uppercase text-xs tracking-wider">Step 4</span>
+        <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
+        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Step 4</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
         Projects & Technical Portfolio
       </h2>
 
-      <div class="bg-amber-400 p-6 sm:p-8 rounded-2xl border-2 border-red-600 shadow-md space-y-5">
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border-4 border-amber-400 shadow-xl space-y-5">
         
         <div class="flex items-center space-x-3">
-          <span class="text-5xl font-black font-display text-red-600">12</span>
+          <span class="text-5xl font-black font-display text-red-700">12</span>
           <div>
             <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
               Data Analytics & Machine Learning Portfolio
             </h3>
-            <p class="text-slate-900 font-serif italic text-xs">
+            <p class="text-red-700 font-serif italic text-xs font-semibold">
               Twelve comprehensive analysis projects built in Python
             </p>
           </div>
         </div>
 
-        <p class="text-slate-900 text-xs sm:text-sm font-normal leading-relaxed">
+        <p class="text-slate-800 text-xs sm:text-sm font-normal leading-relaxed">
           Each project takes a raw dataset from initial cleaning and preprocessing through exploratory data analysis (EDA), hypothesis testing, regression models, classification, K-Means clustering, and final business conclusions.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-white/90 p-4 rounded-xl border border-red-600 text-xs">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-red-50 p-4 rounded-xl border border-red-200 text-xs">
           <div class="space-y-0.5">
-            <p class="font-bold text-red-600">Exploratory Data Analysis</p>
+            <p class="font-bold text-red-700">Exploratory Data Analysis</p>
             <p class="text-[11px] text-slate-700">Data visualization with Seaborn & Matplotlib.</p>
           </div>
           <div class="space-y-0.5">
-            <p class="font-bold text-red-600">Statistical Modeling</p>
+            <p class="font-bold text-red-700">Statistical Modeling</p>
             <p class="text-[11px] text-slate-700">Hypothesis testing, linear & logistic regression.</p>
           </div>
           <div class="space-y-0.5">
-            <p class="font-bold text-red-600">Machine Learning</p>
+            <p class="font-bold text-red-700">Machine Learning</p>
             <p class="text-[11px] text-slate-700">Classification, K-Means clustering & pipelines.</p>
           </div>
         </div>
@@ -327,7 +327,7 @@
         </div>
 
         <div class="pt-2">
-          <a href="https://github.com/khanarfaa03" target="_blank" class="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow transition-all">
+          <a href="https://github.com/khanarfaa03" target="_blank" class="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow transition-all">
             <i class="fa-brands fa-github"></i>
             <span>See the code on GitHub</span>
           </a>
@@ -339,24 +339,24 @@
   </section>
 
   <!-- 5. EXPERIENCE WITH REPORT SECTION -->
-  <section id="experience" class="py-12 bg-amber-50 border-b-2 border-amber-200">
+  <section id="experience" class="py-12 bg-red-950 border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
-        <span class="w-8 h-1.5 bg-red-600 rounded-full"></span>
-        <span class="text-red-600 font-bold uppercase text-xs tracking-wider">Step 5</span>
+        <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
+        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Step 5</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
         Work Experience & Internship Report
       </h2>
 
-      <div class="bg-amber-400 p-6 sm:p-10 rounded-2xl border-2 border-red-600 shadow-lg space-y-6">
+      <div class="bg-white p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-xl space-y-6">
         
         <!-- Job Title Header -->
-        <div class="border-b-2 border-slate-900/60 pb-4 flex flex-col md:flex-row justify-between md:items-center gap-2">
+        <div class="border-b-2 border-slate-200 pb-4 flex flex-col md:flex-row justify-between md:items-center gap-2">
           <div>
-            <span class="px-2.5 py-0.5 rounded-full bg-red-600 text-white font-bold text-[10px] uppercase">
+            <span class="px-2.5 py-0.5 rounded-full bg-red-700 text-white font-bold text-[10px] uppercase">
               Community Initiative Internship
             </span>
             <h3 class="font-serif italic text-2xl font-bold text-slate-900 mt-1">
@@ -366,7 +366,7 @@
               Project: "Health with Dignity" | Roll No: 2507090151 | New Delhi, India
             </p>
           </div>
-          <div class="px-3 py-1 rounded-lg bg-slate-900 text-amber-400 font-bold text-[11px] uppercase tracking-wider self-start md:self-auto">
+          <div class="px-3 py-1 rounded-lg bg-amber-400 text-slate-900 font-bold text-[11px] uppercase tracking-wider self-start md:self-auto">
             Report Verified (40 Pages)
           </div>
         </div>
@@ -375,34 +375,34 @@
         <div class="space-y-3">
           <h4 class="font-bold text-xs text-slate-900 uppercase tracking-wider">Key Professional Responsibilities</h4>
           
-          <div class="space-y-2 text-xs font-normal text-slate-900">
-            <div class="p-3 rounded-xl bg-white/90 border border-red-600 flex items-start space-x-2.5">
-              <i class="fa-solid fa-check text-red-600 text-sm mt-0.5"></i>
+          <div class="space-y-2 text-xs font-normal text-slate-800">
+            <div class="p-3 rounded-xl bg-red-50 border border-red-200 flex items-start space-x-2.5">
+              <i class="fa-solid fa-check text-red-700 text-sm mt-0.5"></i>
               <div>
-                <strong class="font-bold">Operational Database Management:</strong> Managed an operational donor database and tracked daily data entry for thousands of in-kind contributions (blankets, clothes, medicines, hygiene kits).
+                <strong class="font-bold text-slate-900">Operational Database Management:</strong> Managed an operational donor database and tracked daily data entry for thousands of in-kind contributions (blankets, clothes, medicines, hygiene kits).
               </div>
             </div>
 
-            <div class="p-3 rounded-xl bg-white/90 border border-slate-900 flex items-start space-x-2.5">
-              <i class="fa-solid fa-check text-slate-900 text-sm mt-0.5"></i>
+            <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 flex items-start space-x-2.5">
+              <i class="fa-solid fa-check text-amber-600 text-sm mt-0.5"></i>
               <div>
-                <strong class="font-bold">Statutory Income Tax Compliance (Form 10BD & 10BE):</strong> Prepared tax compliance documents, collected donor KYC (PAN/Aadhar), maintained administrative records, and issued automated Form 10BE Section 80G tax benefit certificates.
+                <strong class="font-bold text-slate-900">Statutory Income Tax Compliance (Form 10BD & 10BE):</strong> Prepared tax compliance documents, collected donor KYC (PAN/Aadhar), maintained administrative records, and issued automated Form 10BE Section 80G tax benefit certificates.
               </div>
             </div>
 
-            <div class="p-3 rounded-xl bg-white/90 border border-red-600 flex items-start space-x-2.5">
-              <i class="fa-solid fa-check text-red-600 text-sm mt-0.5"></i>
+            <div class="p-3 rounded-xl bg-red-50 border border-red-200 flex items-start space-x-2.5">
+              <i class="fa-solid fa-check text-red-700 text-sm mt-0.5"></i>
               <div>
-                <strong class="font-bold">Cross-Functional Coordination:</strong> Coordinated with different operational teams, managed on-ground donor receipt logistics, and handled professional donor communications.
+                <strong class="font-bold text-slate-900">Cross-Functional Coordination:</strong> Coordinated with different operational teams, managed on-ground donor receipt logistics, and handled professional donor communications.
               </div>
             </div>
           </div>
         </div>
 
         <!-- Secondary Experience -->
-        <div class="pt-4 border-t border-slate-900/30">
+        <div class="pt-4 border-t border-slate-200">
           <h4 class="font-bold text-sm text-slate-900 mb-1">Event Organiser — Higher Secondary School</h4>
-          <p class="text-xs text-slate-900 font-normal">
+          <p class="text-xs text-slate-700 font-normal">
             Organised and co-managed school events with a team, handling everything from initial planning to day-of operational execution.
           </p>
         </div>
@@ -413,42 +413,42 @@
   </section>
 
   <!-- 6. EDUCATION SECTION -->
-  <section id="education" class="py-12 bg-white border-b-2 border-amber-200">
+  <section id="education" class="py-12 bg-red-900 border-b-2 border-red-950">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
-        <span class="w-8 h-1.5 bg-red-600 rounded-full"></span>
-        <span class="text-red-600 font-bold uppercase text-xs tracking-wider">Step 6</span>
+        <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
+        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Step 6</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
         Education
       </h2>
 
-      <div class="overflow-hidden bg-amber-400 rounded-2xl border-2 border-red-600 shadow-md">
+      <div class="overflow-hidden bg-white rounded-2xl border-2 border-amber-400 shadow-xl">
         <table class="w-full text-left border-collapse">
           <thead>
-            <tr class="bg-red-600 text-white uppercase text-[11px] font-bold tracking-wider">
+            <tr class="bg-red-800 text-white uppercase text-[11px] font-bold tracking-wider">
               <th class="py-3 px-5">Qualification</th>
               <th class="py-3 px-5">Institution</th>
               <th class="py-3 px-5">Focus / Board</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-amber-500 text-slate-900 text-xs sm:text-sm font-medium">
-            <tr class="bg-amber-300/50">
+          <tbody class="divide-y divide-slate-200 text-slate-800 text-xs sm:text-sm font-medium">
+            <tr class="bg-red-50">
               <td class="py-3 px-5 text-red-700 font-bold">BBA (Hons.) — 4-Year Degree</td>
-              <td class="py-3 px-5 font-semibold">Jaypee Institute of Information Technology / Jaypee Business School</td>
-              <td class="py-3 px-5 text-slate-800">Business, Finance & Data Analytics</td>
+              <td class="py-3 px-5 font-semibold text-slate-900">Jaypee Institute of Information Technology / Jaypee Business School</td>
+              <td class="py-3 px-5 text-slate-700">Business, Finance & Data Analytics</td>
             </tr>
             <tr>
               <td class="py-3 px-5">Higher Secondary (12th)</td>
               <td class="py-3 px-5">St. Thomas Girls' Sr. Sec. School</td>
-              <td class="py-3 px-5 text-slate-700">CBSE Board</td>
+              <td class="py-3 px-5 text-slate-600">CBSE Board</td>
             </tr>
             <tr>
               <td class="py-3 px-5">Secondary (10th)</td>
               <td class="py-3 px-5">Vidya Public School</td>
-              <td class="py-3 px-5 text-slate-700">CBSE Board</td>
+              <td class="py-3 px-5 text-slate-600">CBSE Board</td>
             </tr>
           </tbody>
         </table>
@@ -458,41 +458,41 @@
   </section>
 
   <!-- FOOTER & CONTACT -->
-  <footer id="contact" class="bg-amber-400 border-t-4 border-red-600 py-12">
+  <footer id="contact" class="bg-red-950 border-t-4 border-amber-400 py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
         
         <div class="lg:col-span-8 space-y-3">
-          <h2 class="font-serif italic text-3xl font-bold text-slate-900">Let's Talk</h2>
-          <p class="text-slate-900 font-serif italic text-xs sm:text-sm max-w-xl">
+          <h2 class="font-serif italic text-3xl font-bold text-white">Let's Talk</h2>
+          <p class="text-slate-200 font-serif italic text-xs sm:text-sm max-w-xl">
             "Open to internships and entry-level roles in corporate finance, data analysis, and business operations. Based in New Delhi, India."
           </p>
 
           <!-- Bottom Links Bar -->
           <div class="pt-2 flex flex-wrap gap-2">
-            <a href="mailto:khanarfaa03@gmail.com" class="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow transition-all flex items-center space-x-1.5">
+            <a href="mailto:khanarfaa03@gmail.com" class="px-3.5 py-2 rounded-xl bg-white hover:bg-slate-100 text-red-900 font-bold text-xs shadow transition-all flex items-center space-x-1.5">
               <i class="fa-solid fa-envelope"></i>
               <span>khanarfaa03@gmail.com</span>
             </a>
-            <a href="https://github.com/khanarfaa03" target="_blank" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold text-xs shadow transition-all flex items-center space-x-1.5">
+            <a href="https://github.com/khanarfaa03" target="_blank" class="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold text-xs shadow transition-all flex items-center space-x-1.5">
               <i class="fa-brands fa-github"></i>
               <span>GitHub</span>
             </a>
-            <a href="https://khanarfaa03.github.io" target="_blank" class="px-3.5 py-2 rounded-xl bg-white border border-red-600 text-red-600 font-bold text-xs hover:bg-red-50 shadow transition-all flex items-center space-x-1.5">
+            <a href="https://khanarfaa03.github.io" target="_blank" class="px-3.5 py-2 rounded-xl bg-transparent border border-amber-400 text-amber-400 font-bold text-xs hover:bg-amber-400/10 transition-all flex items-center space-x-1.5">
               <i class="fa-solid fa-globe"></i>
               <span>khanarfaa03.github.io</span>
             </a>
-            <a href="#" class="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold text-xs border border-slate-900 transition-all flex items-center space-x-1.5">
+            <a href="https://www.linkedin.com/in/arfaa-khan-b2a938375?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="px-3.5 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs transition-all flex items-center space-x-1.5">
               <i class="fa-brands fa-linkedin"></i>
               <span>LinkedIn</span>
             </a>
           </div>
         </div>
 
-        <div class="lg:col-span-4 lg:text-right space-y-0.5 text-slate-900 text-xs font-medium">
-          <p class="text-base font-serif italic font-bold text-red-700">Arfaa Khan</p>
+        <div class="lg:col-span-4 lg:text-right space-y-0.5 text-slate-300 text-xs font-medium">
+          <p class="text-base font-serif italic font-bold text-amber-400">Arfaa Khan</p>
           <p>4-Year BBA (Hons.) Student</p>
-          <p>Rohini, New Delhi, India</p>
+          <p>New Delhi, India</p>
         </div>
 
       </div>
