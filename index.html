@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arfaa Khan | BBA (Hons.) Finance & Data Portfolio</title>
+  <title>Arfaa Khan | Business, Finance & Data Analytics Portfolio</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts: Playfair Display (Serif/Italic) & Plus Jakarta Sans (Clean Sans) -->
+  <!-- Google Fonts: Playfair Display (Serif/Italic) & Plus Jakarta Sans (Sans) -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   
   <script>
@@ -37,18 +37,27 @@
       color: #0f172a;
       scroll-behavior: smooth;
     }
+    .bg-radial-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.18), transparent 70%),
+                  radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.25), transparent 70%);
+    }
+    .grid-pattern {
+      background-size: 32px 32px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
   </style>
 </head>
-<body class="font-sans antialiased text-slate-900 bg-red-950 text-sm">
+<body class="font-sans antialiased text-slate-900 bg-red-950 text-sm relative">
 
   <!-- TOP NAVIGATION BAR -->
-  <nav class="sticky top-0 z-50 bg-red-900 border-b-2 border-amber-400 shadow-md">
+  <nav class="sticky top-0 z-50 bg-red-900/95 backdrop-blur-md border-b-2 border-amber-400 shadow-xl">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
         <!-- Logo -->
         <div class="flex items-center space-x-2">
-          <div class="w-8 h-8 rounded-full bg-amber-400 text-slate-900 font-black text-sm flex items-center justify-center shadow">
+          <div class="w-8 h-8 rounded-full bg-amber-400 text-slate-900 font-black text-sm flex items-center justify-center shadow-lg ring-2 ring-red-500">
             AK
           </div>
           <span class="font-serif italic font-bold text-xl tracking-tight text-white">
@@ -57,13 +66,13 @@
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden lg:flex items-center space-x-5 text-[11px] font-bold uppercase tracking-wider text-slate-200">
-          <a href="#intro" class="hover:text-amber-400 transition-colors">Intro</a>
-          <a href="#skills" class="hover:text-amber-400 transition-colors">Skills</a>
-          <a href="#certifications" class="hover:text-amber-400 transition-colors">Certifications</a>
-          <a href="#projects" class="hover:text-amber-400 transition-colors">12 Python Projects</a>
-          <a href="#experience" class="hover:text-amber-400 transition-colors">Experience & Report</a>
-          <a href="#education" class="hover:text-amber-400 transition-colors">Education</a>
+        <div class="hidden lg:flex items-center space-x-5 text-[11px] font-extrabold uppercase tracking-widest text-slate-200">
+          <a href="#intro" class="hover:text-amber-400 transition-colors">01. Overview</a>
+          <a href="#skills" class="hover:text-amber-400 transition-colors">02. Core Mastery</a>
+          <a href="#certifications" class="hover:text-amber-400 transition-colors">03. Credentials</a>
+          <a href="#projects" class="hover:text-amber-400 transition-colors">04. 12 Python Projects</a>
+          <a href="#experience" class="hover:text-amber-400 transition-colors">05. Corporate Operations</a>
+          <a href="#education" class="hover:text-amber-400 transition-colors">06. Education</a>
         </div>
 
         <!-- Top Action Links -->
@@ -87,12 +96,20 @@
   </nav>
 
   <!-- 1. INTRO & EXPLANATION SECTION -->
-  <section id="intro" class="py-12 bg-red-950 border-b-2 border-red-900">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-2xl space-y-4">
+  <section id="intro" class="py-12 bg-red-950 border-b-2 border-red-900 grid-pattern relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-white/95 backdrop-blur-md p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-2xl space-y-4">
         
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-700 text-white font-bold text-[11px] uppercase tracking-wider">
-          <span>BBA (Hons.) Candidate — Business, Finance & Data</span>
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-700 text-white font-bold text-[11px] uppercase tracking-wider">
+            <span>Business, Finance & Data Specialist</span>
+          </div>
+
+          <!-- Creative Graphic Palette Badge -->
+          <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 font-extrabold text-[10px]">
+            <i class="fa-solid fa-palette text-red-600"></i>
+            <span>Commercial Art & Creative Design</span>
+          </div>
         </div>
 
         <h1 class="font-serif italic font-bold text-3xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
@@ -104,8 +121,19 @@
         </p>
 
         <p class="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal max-w-3xl">
-          I like work that has to be accurate: records, compliance, and numbers that have to add up. I'm looking for a corporate finance or business operations role where I can keep learning and be useful from the first week. Outside of work I paint, and I keep a portfolio file of my commercial art.
+          I like work that has to be accurate: records, compliance, and numbers that have to add up. I'm looking for a corporate finance or business operations role where I can keep learning and be useful from the first week. Outside of work I paint, and I keep a commercial art portfolio file of my creative designs.
         </p>
+
+        <!-- Tech Logos Header Bar -->
+        <div class="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-200">
+          <span class="text-[10px] font-extrabold uppercase text-slate-500 tracking-wider">Primary Tools & Stack:</span>
+          <div class="flex items-center space-x-2 text-slate-700 font-extrabold text-xs">
+            <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 flex items-center space-x-1 border border-amber-200"><i class="fa-brands fa-python text-red-600"></i><span>Python</span></span>
+            <span class="px-2.5 py-1 rounded-md bg-green-100 text-green-900 flex items-center space-x-1 border border-green-200"><i class="fa-solid fa-file-excel text-green-700"></i><span>Advanced Excel</span></span>
+            <span class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-900 flex items-center space-x-1 border border-blue-200"><i class="fa-solid fa-chart-line text-blue-700"></i><span>Financial Analytics</span></span>
+            <span class="px-2.5 py-1 rounded-md bg-purple-100 text-purple-900 flex items-center space-x-1 border border-purple-200"><i class="fa-solid fa-paintbrush text-purple-700"></i><span>Commercial Art</span></span>
+          </div>
+        </div>
 
         <!-- Top Links Header Bar -->
         <div class="pt-2 flex flex-wrap items-center gap-2">
@@ -132,16 +160,16 @@
   </section>
 
   <!-- 2. SKILLS SECTION -->
-  <section id="skills" class="py-12 bg-red-900 border-b-2 border-red-950">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="skills" class="py-12 bg-red-900 border-b-2 border-red-950 grid-pattern relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">02. Core Mastery & Expertise</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">02. Core Mastery & Expertise</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
-        Skills & Core Competencies
+        Skills & Functional Capabilities
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -149,54 +177,42 @@
         <!-- Financial & Analytical -->
         <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
           <div class="flex items-center justify-between">
-            <div class="w-9 h-9 rounded-xl bg-red-700 text-white flex items-center justify-center text-sm font-bold">
+            <div class="w-9 h-9 rounded-xl bg-red-700 text-white flex items-center justify-center text-sm font-bold shadow">
               <i class="fa-solid fa-calculator"></i>
             </div>
-            <!-- Tech / Finance Logos -->
-            <div class="flex items-center space-x-1 text-slate-400 text-xs">
-              <i class="fa-solid fa-chart-pie text-amber-500" title="Financial Data"></i>
-              <i class="fa-solid fa-file-invoice-dollar text-red-600" title="Tax Compliance"></i>
-            </div>
+            <i class="fa-solid fa-chart-pie text-amber-500 text-xl"></i>
           </div>
-          <h3 class="font-bold text-base text-slate-900">Financial & Analytical</h3>
+          <h3 class="font-bold text-base text-slate-900">Financial & Statutory Compliance</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
-            Financial management, statutory tax compliance (Income Tax Form 10BD & 10BE), Section 80G documentation, data management, financial data analysis & visualization, hypothesis testing.
+            Financial management, statutory tax compliance (Income Tax Form 10BD & 10BE), Section 80G tax exemption certificates, donor KYC documentation, financial statement analysis & ledger reconciliation.
           </p>
         </div>
 
         <!-- Technical -->
         <div class="bg-white p-6 rounded-2xl border-2 border-red-600 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
           <div class="flex items-center justify-between">
-            <div class="w-9 h-9 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-sm font-bold">
+            <div class="w-9 h-9 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-sm font-bold shadow">
               <i class="fa-solid fa-code"></i>
             </div>
-            <!-- Python / Tech Logos -->
-            <div class="flex items-center space-x-1.5 text-slate-600 text-sm">
-              <i class="fa-brands fa-python text-blue-600" title="Python"></i>
-              <i class="fa-solid fa-table text-emerald-600" title="MS Excel"></i>
-              <i class="fa-solid fa-database text-amber-600" title="MIS Databases"></i>
-            </div>
+            <i class="fa-brands fa-python text-red-600 text-2xl"></i>
           </div>
-          <h3 class="font-bold text-base text-slate-900">Technical Capabilities</h3>
+          <h3 class="font-bold text-base text-slate-900">Data Analytics & Automation</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
-            Python (Pandas, SciPy, Seaborn, NumPy), Microsoft Excel (Pivot Tables, VLOOKUP, Advanced Formulas), Word & PowerPoint, operational database management, automated MIS generation.
+            Python (Pandas, SciPy, Seaborn, NumPy), Advanced MS Excel (Pivot Tables, VLOOKUP, Automated Formulas), operational database management, data cleaning, automated MIS reporting.
           </p>
         </div>
 
-        <!-- Working With Others -->
+        <!-- Working With Others & Creative -->
         <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
           <div class="flex items-center justify-between">
-            <div class="w-9 h-9 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-sm font-bold">
-              <i class="fa-solid fa-users"></i>
+            <div class="w-9 h-9 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-sm font-bold shadow">
+              <i class="fa-solid fa-paintbrush"></i>
             </div>
-            <div class="flex items-center space-x-1 text-slate-400 text-xs">
-              <i class="fa-solid fa-handshake text-red-600" title="Operations"></i>
-              <i class="fa-solid fa-boxes-packing text-amber-500" title="Logistics"></i>
-            </div>
+            <i class="fa-solid fa-pen-nib text-amber-600 text-xl"></i>
           </div>
-          <h3 class="font-bold text-base text-slate-900">Working With Others</h3>
+          <h3 class="font-bold text-base text-slate-900">Commercial Art & Operations</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
-            Professional communication, data tracking and statutory documentation, teamwork, donor relations, stakeholder management.
+            Commercial art design, professional communication, donor relationship management, team coordination, project execution, and high-accuracy recordkeeping.
           </p>
         </div>
 
@@ -211,7 +227,7 @@
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">03. Verified Industry Credentials</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">03. Verified Industry Credentials</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
@@ -222,10 +238,12 @@
         
         <!-- Finance & Management -->
         <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
-          <h3 class="font-bold text-sm text-red-700 border-b border-red-200 pb-1.5 uppercase tracking-wide flex items-center justify-between">
-            <span>Finance & Management</span>
-            <i class="fa-solid fa-coins text-amber-500"></i>
-          </h3>
+          <div class="flex items-center justify-between border-b border-red-200 pb-1.5">
+            <h3 class="font-bold text-sm text-red-700 uppercase tracking-wide">
+              Finance & Management
+            </h3>
+            <i class="fa-solid fa-building-columns text-amber-500"></i>
+          </div>
           <ul class="space-y-2 text-xs font-medium text-slate-800">
             <li class="flex items-start space-x-2">
               <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
@@ -240,10 +258,12 @@
 
         <!-- Data, AI & Governance -->
         <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-3">
-          <h3 class="font-bold text-sm text-slate-900 border-b border-slate-200 pb-1.5 uppercase tracking-wide flex items-center justify-between">
-            <span>Data, AI & Governance</span>
-            <i class="fa-solid fa-shield-halved text-red-600"></i>
-          </h3>
+          <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
+            <h3 class="font-bold text-sm text-slate-900 uppercase tracking-wide">
+              Data, AI & Governance
+            </h3>
+            <i class="fa-solid fa-database text-red-600"></i>
+          </div>
           <ul class="space-y-2 text-xs font-medium text-slate-800">
             <li class="flex items-start space-x-2">
               <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
@@ -266,10 +286,12 @@
 
         <!-- Design & Marketing -->
         <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
-          <h3 class="font-bold text-sm text-red-700 border-b border-red-200 pb-1.5 uppercase tracking-wide flex items-center justify-between">
-            <span>Design & Marketing</span>
+          <div class="flex items-center justify-between border-b border-red-200 pb-1.5">
+            <h3 class="font-bold text-sm text-red-700 uppercase tracking-wide">
+              Design & Commercial Art
+            </h3>
             <i class="fa-solid fa-palette text-amber-500"></i>
-          </h3>
+          </div>
           <ul class="space-y-2 text-xs font-medium text-slate-800">
             <li class="flex items-start space-x-2">
               <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
@@ -296,29 +318,35 @@
   </section>
 
   <!-- 4. PROJECTS (12 PYTHON PROJECTS PORTFOLIO) SECTION -->
-  <section id="projects" class="py-12 bg-red-900 border-b-2 border-red-950">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="projects" class="py-12 bg-red-900 border-b-2 border-red-950 grid-pattern">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">04. Quantitative & Data Science Portfolio</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">04. Data Analytics & Quantitative Portfolio</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
-        Projects & Technical Portfolio
+        12 Python Data Analytics Projects
       </h2>
 
       <div class="bg-white p-6 sm:p-8 rounded-2xl border-4 border-amber-400 shadow-xl space-y-5">
         
-        <div class="flex items-center space-x-3">
-          <span class="text-5xl font-black font-display text-red-700">12</span>
-          <div>
-            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
-              Data Analytics & Machine Learning Portfolio
-            </h3>
-            <p class="text-red-700 font-serif italic text-xs font-semibold">
-              Twelve comprehensive analysis projects built in Python
-            </p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <span class="text-5xl font-black font-display text-red-700">12</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+                Data Analytics & Machine Learning Projects
+              </h3>
+              <p class="text-red-700 font-serif italic text-xs font-semibold">
+                Twelve analysis projects built in Python
+              </p>
+            </div>
+          </div>
+          <div class="hidden sm:flex items-center space-x-2 text-2xl text-red-600">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-solid fa-chart-simple"></i>
           </div>
         </div>
 
@@ -328,29 +356,45 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-red-50 p-4 rounded-xl border border-red-200 text-xs">
           <div class="space-y-0.5">
-            <p class="font-bold text-red-700">Exploratory Data Analysis</p>
+            <p class="font-bold text-red-700 flex items-center space-x-1">
+              <i class="fa-solid fa-chart-line text-amber-500"></i>
+              <span>Exploratory Data Analysis</span>
+            </p>
             <p class="text-[11px] text-slate-700">Data visualization with Seaborn & Matplotlib.</p>
           </div>
           <div class="space-y-0.5">
-            <p class="font-bold text-red-700">Statistical Modeling</p>
+            <p class="font-bold text-red-700 flex items-center space-x-1">
+              <i class="fa-solid fa-square-root-variable text-amber-500"></i>
+              <span>Statistical Modeling</span>
+            </p>
             <p class="text-[11px] text-slate-700">Hypothesis testing, linear & logistic regression.</p>
           </div>
           <div class="space-y-0.5">
-            <p class="font-bold text-red-700">Machine Learning</p>
+            <p class="font-bold text-red-700 flex items-center space-x-1">
+              <i class="fa-solid fa-network-wired text-amber-500"></i>
+              <span>Machine Learning</span>
+            </p>
             <p class="text-[11px] text-slate-700">Classification, K-Means clustering & pipelines.</p>
           </div>
         </div>
 
-        <!-- Tech Badges -->
-        <div class="flex flex-wrap gap-1.5 pt-1">
+        <!-- Tech Badges with Logos -->
+        <div class="flex flex-wrap gap-2 pt-1">
           <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
-            <i class="fa-brands fa-python text-amber-400"></i>
-            <span>Python</span>
+            <i class="fa-brands fa-python"></i><span>Python</span>
           </span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px]">Pandas</span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px]">SciPy</span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px]">Seaborn</span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px]">NumPy</span>
+          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
+            <i class="fa-solid fa-table"></i><span>Pandas</span>
+          </span>
+          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
+            <i class="fa-solid fa-calculator"></i><span>SciPy</span>
+          </span>
+          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
+            <i class="fa-solid fa-chart-area"></i><span>Seaborn</span>
+          </span>
+          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
+            <i class="fa-solid fa-cubes"></i><span>NumPy</span>
+          </span>
         </div>
 
         <div class="pt-2">
@@ -371,14 +415,14 @@
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">05. Corporate Operations Internship</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">05. Corporate Operations Internship</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
-        Work Experience & Comprehensive Internship Report
+        Corporate Operations Internship & NGO Compliance Summary
       </h2>
 
-      <div class="bg-white p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-xl space-y-6">
+      <div class="bg-white p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-xl space-y-8">
         
         <!-- Job Title Header -->
         <div class="border-b-2 border-slate-200 pb-4 flex flex-col md:flex-row justify-between md:items-center gap-2">
@@ -390,18 +434,18 @@
               Intern, Uday Foundation (NGO)
             </h3>
             <p class="text-red-700 font-serif italic text-xs font-semibold">
-              Project Title: "Health with Dignity" | Focus: NGO Compliance & Management | New Delhi, India
+              Project Focus: NGO Compliance & Management | Title: "Health with Dignity" | New Delhi, India
             </p>
           </div>
           <div class="px-3 py-1 rounded-lg bg-amber-400 text-slate-900 font-bold text-[11px] uppercase tracking-wider self-start md:self-auto">
-            Comprehensive Report (40 Pages)
+            Report Verified (40 Pages)
           </div>
         </div>
 
-        <!-- Detailed 4-Topic Breakdown -->
+        <!-- Detailed 4-Module Executive Breakdown -->
         <div class="space-y-6">
           <h4 class="font-bold text-xs text-slate-900 uppercase tracking-wider border-b border-slate-200 pb-1">
-            Detailed Internship Case Study & Report Modules
+            Core Operational Modules & Compliance Work
           </h4>
 
           <!-- Report Module 1 -->
@@ -415,14 +459,14 @@
             </p>
           </div>
 
-          <!-- Report Module 2 (Rewritten in First-Person) -->
+          <!-- Report Module 2 (Rewritten in First Person) -->
           <div class="p-4 rounded-xl bg-amber-50 border border-amber-300 space-y-2">
             <div class="flex items-center space-x-2">
               <span class="w-6 h-6 rounded-full bg-amber-500 text-slate-900 text-xs font-bold flex items-center justify-center">2</span>
               <h5 class="font-bold text-sm text-slate-900">Statutory Tax Compliance (Form 10BD & Form 10BE Integration)</h5>
             </div>
             <p class="text-xs text-slate-700 leading-relaxed pl-8">
-              Under Income Tax Department guidelines, non-profit organizations must file an annual statement of donations (**Form 10BD**), which generates certified **Form 10BE** tax receipts for donors under Section 80G. During this assignment, I reconciled monetary and in-kind donation ledgers, collected and validated donor KYC credentials (PAN, Aadhar, contact details), maintained central Excel spreadsheets, and issued automated Form 10BE tax benefit certificates to individual donors.
+              I executed statutory tax compliance tasks under Income Tax Department regulations, where non-profit organizations must file an annual statement of donations (**Form 10BD**). I reconciled donor KYC entries (PAN, Aadhar, contact details) across central databases to generate and issue verified **Form 10BE** Section 80G tax exemption certificates to individual donors.
             </p>
           </div>
 
@@ -433,7 +477,7 @@
               <h5 class="font-bold text-sm text-slate-900">In-Kind Inventory & Operational Logistics</h5>
             </div>
             <p class="text-xs text-slate-700 leading-relaxed pl-8">
-              Managed physical collection drives and on-ground donor receipt operations. Organized, sorted, and cataloged incoming in-kind contributions including clothes, blankets, toys, medical aid, and hygiene kits for structured relief distribution to families in need.
+              I managed physical collection drives and on-ground donor receipt operations. Organized, sorted, and cataloged incoming in-kind contributions including clothes, blankets, toys, medical aid, and hygiene kits for structured relief distribution to families in need.
             </p>
           </div>
 
@@ -444,7 +488,7 @@
               <h5 class="font-bold text-sm text-slate-900">Data Integration, Register Audits & MIS Reporting</h5>
             </div>
             <p class="text-xs text-slate-700 leading-relaxed pl-8">
-              Cross-checked manual receipt books and physical registers against master Microsoft Excel spreadsheets to eliminate duplicate entries, verify donor KYC credentials, and generate internal management information system (MIS) reports for NGO leadership.
+              I cross-checked manual receipt books and physical registers against master Microsoft Excel spreadsheets to eliminate duplicate entries, verify donor KYC credentials, and generate internal management information system (MIS) reports for NGO leadership.
             </p>
           </div>
         </div>
@@ -468,7 +512,7 @@
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">06. Academic Foundations</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">06. Academic Foundations</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
@@ -488,7 +532,7 @@
             <tr class="bg-red-50">
               <td class="py-3 px-5 text-red-700 font-bold">BBA (Hons.) — 4-Year Degree</td>
               <td class="py-3 px-5 font-semibold text-slate-900">Jaypee Institute of Information Technology / Jaypee Business School</td>
-              <td class="py-3 px-5 text-slate-700">Business, Finance & Data Analytics</td>
+              <td class="py-3 px-5 text-slate-700">Business, Corporate Finance & Data Analytics</td>
             </tr>
             <tr>
               <td class="py-3 px-5">Higher Secondary (12th)</td>
