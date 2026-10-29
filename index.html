@@ -37,10 +37,6 @@
       color: #0f172a;
       scroll-behavior: smooth;
     }
-    .bg-radial-glow {
-      background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.18), transparent 70%),
-                  radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.25), transparent 70%);
-    }
     .grid-pattern {
       background-size: 32px 32px;
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
@@ -49,6 +45,13 @@
   </style>
 </head>
 <body class="font-sans antialiased text-slate-900 bg-red-950 text-sm relative">
+
+  <!-- TOP QUOTE BANNER -->
+  <div class="bg-amber-400 text-slate-950 py-2.5 px-4 text-center font-serif italic font-bold text-xs sm:text-sm tracking-wide border-b-2 border-red-900 shadow-inner">
+    <i class="fa-solid fa-quote-left text-red-700 mr-2"></i>
+    "Success doesn't come to you, you go to it" <span class="font-sans not-italic font-extrabold text-red-800 ml-1">— Arfaa Khan</span>
+    <i class="fa-solid fa-quote-right text-red-700 ml-2"></i>
+  </div>
 
   <!-- TOP NAVIGATION BAR -->
   <nav class="sticky top-0 z-50 bg-red-900/95 backdrop-blur-md border-b-2 border-amber-400 shadow-xl">
@@ -66,13 +69,14 @@
         </div>
 
         <!-- Navigation Links -->
-        <div class="hidden lg:flex items-center space-x-5 text-[11px] font-extrabold uppercase tracking-widest text-slate-200">
+        <div class="hidden lg:flex items-center space-x-4 text-[11px] font-extrabold uppercase tracking-wider text-slate-200">
           <a href="#intro" class="hover:text-amber-400 transition-colors">01. Overview</a>
-          <a href="#skills" class="hover:text-amber-400 transition-colors">02. Core Mastery</a>
-          <a href="#certifications" class="hover:text-amber-400 transition-colors">03. Credentials</a>
-          <a href="#projects" class="hover:text-amber-400 transition-colors">04. 12 Python Projects</a>
-          <a href="#experience" class="hover:text-amber-400 transition-colors">05. Corporate Operations</a>
-          <a href="#education" class="hover:text-amber-400 transition-colors">06. Education</a>
+          <a href="#skills" class="hover:text-amber-400 transition-colors">02. Expertise</a>
+          <a href="#certifications" class="hover:text-amber-400 transition-colors">03. Certifications</a>
+          <a href="#projects" class="hover:text-amber-400 transition-colors">04. Projects</a>
+          <a href="#experience" class="hover:text-amber-400 transition-colors">05. Operations</a>
+          <a href="#presentation" class="hover:text-amber-400 transition-colors">06. Presentation</a>
+          <a href="#education" class="hover:text-amber-400 transition-colors">07. Education</a>
         </div>
 
         <!-- Top Action Links -->
@@ -85,10 +89,6 @@
             <i class="fa-brands fa-github text-[10px]"></i>
             <span class="hidden sm:inline">GitHub</span>
           </a>
-          <a href="https://khanarfaa03.github.io" target="_blank" class="px-2.5 py-1.5 rounded-lg bg-transparent border border-amber-400 text-amber-400 font-bold text-xs hover:bg-amber-400/10 transition-all flex items-center space-x-1">
-            <i class="fa-solid fa-globe text-[10px]"></i>
-            <span class="hidden sm:inline">Website</span>
-          </a>
         </div>
 
       </div>
@@ -98,17 +98,15 @@
   <!-- 1. INTRO & EXPLANATION SECTION -->
   <section id="intro" class="py-12 bg-red-950 border-b-2 border-red-900 grid-pattern relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="bg-white/95 backdrop-blur-md p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-2xl space-y-4">
+      <div class="bg-white/95 backdrop-blur-md p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-2xl space-y-5">
         
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-700 text-white font-bold text-[11px] uppercase tracking-wider">
-            <span>Business, Finance & Data Specialist</span>
+            <span>Business, Finance & Data Analytics Specialist</span>
           </div>
-
-          <!-- Creative Graphic Palette Badge -->
           <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 font-extrabold text-[10px]">
             <i class="fa-solid fa-palette text-red-600"></i>
-            <span>Commercial Art & Creative Design</span>
+            <span>Commercial Art & Creative Design Portfolio</span>
           </div>
         </div>
 
@@ -120,22 +118,22 @@
           "BBA (Hons.) student in business and finance, working with data in Python and Excel."
         </p>
 
-        <p class="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal max-w-3xl">
-          I like work that has to be accurate: records, compliance, and numbers that have to add up. I'm looking for a corporate finance or business operations role where I can keep learning and be useful from the first week. Outside of work I paint, and I keep a commercial art portfolio file of my creative designs.
+        <p class="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal max-w-4xl">
+          I like work that has to be accurate: records, compliance, and numbers that have to add up. I'm looking for a corporate finance or business operations role where I can keep learning and be useful from the first week. Beyond quantitative modeling and financial statements, I maintain an active commercial art and creative design portfolio, allowing me to bridge rigorous data analytics with compelling visual communication.
         </p>
 
-        <!-- Tech Logos Header Bar -->
+        <!-- Tool Stack Badges -->
         <div class="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-200">
-          <span class="text-[10px] font-extrabold uppercase text-slate-500 tracking-wider">Primary Tools & Stack:</span>
-          <div class="flex items-center space-x-2 text-slate-700 font-extrabold text-xs">
+          <span class="text-[10px] font-extrabold uppercase text-slate-500 tracking-wider">Core Technical Stack:</span>
+          <div class="flex flex-wrap items-center gap-2 text-slate-700 font-extrabold text-xs">
             <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 flex items-center space-x-1 border border-amber-200"><i class="fa-brands fa-python text-red-600"></i><span>Python</span></span>
-            <span class="px-2.5 py-1 rounded-md bg-green-100 text-green-900 flex items-center space-x-1 border border-green-200"><i class="fa-solid fa-file-excel text-green-700"></i><span>Advanced Excel</span></span>
-            <span class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-900 flex items-center space-x-1 border border-blue-200"><i class="fa-solid fa-chart-line text-blue-700"></i><span>Financial Analytics</span></span>
-            <span class="px-2.5 py-1 rounded-md bg-purple-100 text-purple-900 flex items-center space-x-1 border border-purple-200"><i class="fa-solid fa-paintbrush text-purple-700"></i><span>Commercial Art</span></span>
+            <span class="px-2.5 py-1 rounded-md bg-green-100 text-green-900 flex items-center space-x-1 border border-green-200"><i class="fa-solid fa-file-excel text-green-700"></i><span>Advanced Excel & MIS</span></span>
+            <span class="px-2.5 py-1 rounded-md bg-blue-100 text-blue-900 flex items-center space-x-1 border border-blue-200"><i class="fa-solid fa-chart-line text-blue-700"></i><span>Financial Analysis</span></span>
+            <span class="px-2.5 py-1 rounded-md bg-purple-100 text-purple-900 flex items-center space-x-1 border border-purple-200"><i class="fa-solid fa-shield-halved text-purple-700"></i><span>Data Governance & GDPR</span></span>
           </div>
         </div>
 
-        <!-- Top Links Header Bar -->
+        <!-- Action Links -->
         <div class="pt-2 flex flex-wrap items-center gap-2">
           <a href="mailto:khanarfaa03@gmail.com" class="px-3.5 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow transition-all flex items-center space-x-1.5">
             <i class="fa-solid fa-envelope"></i>
@@ -143,11 +141,11 @@
           </a>
           <a href="https://github.com/khanarfaa03" target="_blank" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold text-xs shadow transition-all flex items-center space-x-1.5">
             <i class="fa-brands fa-github"></i>
-            <span>GitHub Portfolio</span>
+            <span>GitHub Repositories</span>
           </a>
           <a href="https://khanarfaa03.github.io" target="_blank" class="px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold text-xs shadow transition-all flex items-center space-x-1.5">
             <i class="fa-solid fa-globe"></i>
-            <span>khanarfaa03.github.io</span>
+            <span>Live Website</span>
           </a>
           <a href="https://www.linkedin.com/in/arfaa-khan-b2a938375?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="px-3.5 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs transition-all flex items-center space-x-1.5">
             <i class="fa-brands fa-linkedin"></i>
@@ -165,31 +163,31 @@
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">02. Core Mastery & Expertise</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">02. Core Expertise & Capabilities</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
-        Skills & Functional Capabilities
+        Skills & Technical Mastery
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         
-        <!-- Financial & Analytical -->
-        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
+        <!-- Financial & Statutory -->
+        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
           <div class="flex items-center justify-between">
             <div class="w-9 h-9 rounded-xl bg-red-700 text-white flex items-center justify-center text-sm font-bold shadow">
               <i class="fa-solid fa-calculator"></i>
             </div>
-            <i class="fa-solid fa-chart-pie text-amber-500 text-xl"></i>
+            <i class="fa-solid fa-file-invoice-dollar text-amber-500 text-xl"></i>
           </div>
           <h3 class="font-bold text-base text-slate-900">Financial & Statutory Compliance</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
-            Financial management, statutory tax compliance (Income Tax Form 10BD & 10BE), Section 80G tax exemption certificates, donor KYC documentation, financial statement analysis & ledger reconciliation.
+            Proficient in corporate financial management, statutory tax filings (Income Tax Form 10BD & 10BE), Section 80G tax exemption certificates, donor KYC auditing, ledger reconciliation, and meticulous financial statement reviews.
           </p>
         </div>
 
-        <!-- Technical -->
-        <div class="bg-white p-6 rounded-2xl border-2 border-red-600 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
+        <!-- Technical Analytics -->
+        <div class="bg-white p-6 rounded-2xl border-2 border-red-600 shadow-md space-y-3">
           <div class="flex items-center justify-between">
             <div class="w-9 h-9 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-sm font-bold shadow">
               <i class="fa-solid fa-code"></i>
@@ -198,12 +196,12 @@
           </div>
           <h3 class="font-bold text-base text-slate-900">Data Analytics & Automation</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
-            Python (Pandas, SciPy, Seaborn, NumPy), Advanced MS Excel (Pivot Tables, VLOOKUP, Automated Formulas), operational database management, data cleaning, automated MIS reporting.
+            Advanced Python programming (Pandas, SciPy, Seaborn, NumPy) for exploratory data analysis, hypothesis testing, regression modeling, and automated MIS reporting using Advanced MS Excel (Pivot Tables, VLOOKUP).
           </p>
         </div>
 
-        <!-- Working With Others & Creative -->
-        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3 hover:-translate-y-0.5 transition-transform">
+        <!-- Commercial Art & Operations -->
+        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
           <div class="flex items-center justify-between">
             <div class="w-9 h-9 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-sm font-bold shadow">
               <i class="fa-solid fa-paintbrush"></i>
@@ -212,7 +210,7 @@
           </div>
           <h3 class="font-bold text-base text-slate-900">Commercial Art & Operations</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
-            Commercial art design, professional communication, donor relationship management, team coordination, project execution, and high-accuracy recordkeeping.
+            Professional commercial art design, stakeholder communication, cross-functional team leadership, inventory logistics management, and high-accuracy administrative data tracking.
           </p>
         </div>
 
@@ -221,195 +219,290 @@
     </div>
   </section>
 
-  <!-- 3. CERTIFICATIONS SECTION -->
+  <!-- 3. CERTIFICATIONS SECTION WITH DETAILED KNOWLEDGE GAINED -->
   <section id="certifications" class="py-12 bg-red-950 border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">03. Verified Industry Credentials</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">03. Verified Industry Credentials & Learning</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
-        Certifications
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-2">
+        Professional Certifications & Knowledge Gained
       </h2>
+      <p class="text-amber-200 text-xs mb-6">Detailed breakdown of specialized certifications and the practical competencies acquired:</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         
-        <!-- Finance & Management -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
-          <div class="flex items-center justify-between border-b border-red-200 pb-1.5">
-            <h3 class="font-bold text-sm text-red-700 uppercase tracking-wide">
-              Finance & Management
-            </h3>
-            <i class="fa-solid fa-building-columns text-amber-500"></i>
+        <!-- GDPR & Data Privacy -->
+        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2">
+          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-shield-cat text-red-700 text-lg"></i>
+            <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">GDPR & Data Privacy Fundamentals</h3>
           </div>
-          <ul class="space-y-2 text-xs font-medium text-slate-800">
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
-              <span>Banking & Finance Management, IISDT</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
-              <span>Certificate of Excellence in Financial Literacy, NISM</span>
-            </li>
-          </ul>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Knowledge Gained[span_10](start_span)[span_10](end_span):</strong> Specialist certification covering data protection regulations, privacy principles, and security controls required to safeguard sensitive information[span_11](start_span)[span_11](end_span). Strengthened expertise in ensuring compliance under the General Data Protection Regulation (GDPR) and global privacy laws while fostering digital trust and accountability[span_12](start_span)[span_12](end_span).
+          </p>
         </div>
 
-        <!-- Data, AI & Governance -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-3">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-            <h3 class="font-bold text-sm text-slate-900 uppercase tracking-wide">
-              Data, AI & Governance
-            </h3>
-            <i class="fa-solid fa-database text-red-600"></i>
+        <!-- EU AI Act Literacy -->
+        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2">
+          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-robot text-red-700 text-lg"></i>
+            <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">EU AI Act Literacy</h3>
           </div>
-          <ul class="space-y-2 text-xs font-medium text-slate-800">
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
-              <span>Data Governance Fundamentals, DataCamp</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
-              <span>AI Leadership Fundamentals</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
-              <span>GDPR & Data Privacy Fundamentals Specialist</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-red-600 mt-0.5"></i>
-              <span>EU AI Act Literacy Specialist</span>
-            </li>
-          </ul>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Knowledge Gained[span_13](start_span)[span_13](end_span):</strong> Specialist certification focused on building AI literacy skills to satisfy organizational obligations under Article 4 of the EU AI Act[span_14](start_span)[span_14](end_span). Mastered AI risk classifications, legal compliance requirements, and practical frameworks to safely and effectively integrate AI technology within enterprise environments[span_15](start_span)[span_15](end_span).
+          </p>
         </div>
 
-        <!-- Design & Marketing -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-3">
-          <div class="flex items-center justify-between border-b border-red-200 pb-1.5">
-            <h3 class="font-bold text-sm text-red-700 uppercase tracking-wide">
-              Design & Commercial Art
-            </h3>
-            <i class="fa-solid fa-palette text-amber-500"></i>
+        <!-- Data Governance Fundamentals -->
+        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2">
+          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-database text-red-700 text-lg"></i>
+            <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Data Governance Fundamentals</h3>
           </div>
-          <ul class="space-y-2 text-xs font-medium text-slate-800">
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
-              <span>Adobe Graphic Designer Professional</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
-              <span>Adobe Marketing Specialist Professional</span>
-            </li>
-            <li class="flex items-start space-x-2">
-              <i class="fa-solid fa-award text-amber-500 mt-0.5"></i>
-              <span>Adobe Content Creator Professional</span>
-            </li>
-          </ul>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Knowledge Gained[span_16](start_span)[span_16](end_span):</strong> Certified in essential concepts for managing and securing organizational data[span_17](start_span)[span_17](end_span). Acquired robust skills in data privacy, security/protection measures, data quality control, establishing governance practices, data stewardship, and aligning data strategies with regulatory standards[span_18](start_span)[span_18](end_span).
+          </p>
+        </div>
+
+        <!-- AI Leadership Fundamentals -->
+        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2">
+          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-chess-queen text-red-700 text-lg"></i>
+            <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">AI Leadership Fundamentals</h3>
+          </div>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Knowledge Gained[span_19](start_span)[span_19](end_span):</strong> Validates core strategic, ethical, and practical skills needed to guide artificial intelligence initiatives from initial business case development through to final deployment[span_20](start_span)[span_20](end_span). Developed expertise in building strong cases for AI investment, navigating complex governance challenges, and protecting AI systems against security threats[span_21](start_span)[span_21](end_span).
+          </p>
+        </div>
+
+        <!-- Adobe Marketing Specialist -->
+        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2">
+          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-bullhorn text-red-700 text-lg"></i>
+            <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Marketing Specialist</h3>
+          </div>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Knowledge Gained[span_22](start_span)[span_22](end_span):</strong> Completed a comprehensive 5-course professional certificate offered by Adobe[span_23](start_span)[span_23](end_span). Developed key expertise in digital and multichannel marketing strategies, generative AI content creation, social media strategy, SEO, and marketing automation using tools like Adobe Express[span_24](start_span)[span_24](end_span).
+          </p>
+        </div>
+
+        <!-- Adobe Content Creator & Graphic Designer -->
+        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2">
+          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+            <i class="fa-solid fa-pen-nib text-red-700 text-lg"></i>
+            <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Content Creator & Graphic Designer</h3>
+          </div>
+          <p class="text-[11px] text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Knowledge Gained[span_25](start_span)[span_25](end_span)[span_26](start_span)[span_26](end_span):</strong> Mastered industry-standard graphic design tools (Photoshop, Illustrator), visual communication, layout, typography, color theory[span_27](start_span)[span_27](end_span), and content production workflows[span_28](start_span)[span_28](end_span). Strengthened ability to produce professional-quality digital graphics, video content, and design documents[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span).
+          </p>
         </div>
 
       </div>
-
-      <p class="mt-4 text-[11px] font-serif italic text-amber-200 text-center">
-        Adobe certifications earned through Coursera. Additional workshops completed with NISM, Adobe, Coursera, and Nasscom Foundation.
-      </p>
 
     </div>
   </section>
 
-  <!-- 4. PROJECTS (12 PYTHON PROJECTS PORTFOLIO) SECTION -->
+  <!-- 4. PROJECTS (12 PYTHON PROJECTS WITH DETAILED CASE STUDY SUMMARIES) SECTION -->
   <section id="projects" class="py-12 bg-red-900 border-b-2 border-red-950 grid-pattern">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">04. Data Analytics & Quantitative Portfolio</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">04. Quantitative & Data Science Portfolio</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
-        12 Python Data Analytics Projects
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-2">
+        12 Python Data Analytics Projects & Detailed Case Studies
       </h2>
+      <p class="text-amber-200 text-xs mb-6">Comprehensive summaries for each analytical model and data pipeline built in Python[span_31](start_span)[span_31](end_span)[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span):</p>
 
-      <div class="bg-white p-6 sm:p-8 rounded-2xl border-4 border-amber-400 shadow-xl space-y-5">
+      <div class="space-y-6">
         
-        <div class="flex items-center justify-between">
-          <div class="flex items-center space-x-3">
-            <span class="text-5xl font-black font-display text-red-700">12</span>
-            <div>
-              <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
-                Data Analytics & Machine Learning Projects
-              </h3>
-              <p class="text-red-700 font-serif italic text-xs font-semibold">
-                Twelve analysis projects built in Python
-              </p>
+        <!-- Project 1: Calorie Nutrition Calculator -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-amber-400 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Calorie Nutrition Calculator</h3>
             </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_34](start_span)[span_34](end_span)</span>
           </div>
-          <div class="hidden sm:flex items-center space-x-2 text-2xl text-red-600">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-solid fa-chart-simple"></i>
-          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Developed a functional Python application and data processing pipeline designed to calculate nutritional intake, track caloric expenditure, and analyze macro-nutrient distributions based on user metabolic profiles and dietary datasets.
+          </p>
         </div>
 
-        <p class="text-slate-800 text-xs sm:text-sm font-normal leading-relaxed">
-          Each project takes a raw dataset from initial cleaning and preprocessing through exploratory data analysis (EDA), hypothesis testing, regression models, classification, K-Means clustering, and final business conclusions.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-red-50 p-4 rounded-xl border border-red-200 text-xs">
-          <div class="space-y-0.5">
-            <p class="font-bold text-red-700 flex items-center space-x-1">
-              <i class="fa-solid fa-chart-line text-amber-500"></i>
-              <span>Exploratory Data Analysis</span>
-            </p>
-            <p class="text-[11px] text-slate-700">Data visualization with Seaborn & Matplotlib.</p>
+        <!-- Project 2: Movie Rental Duration Prediction -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-red-600 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Movie Rental Duration Prediction</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_35](start_span)[span_35](end_span)</span>
           </div>
-          <div class="space-y-0.5">
-            <p class="font-bold text-red-700 flex items-center space-x-1">
-              <i class="fa-solid fa-square-root-variable text-amber-500"></i>
-              <span>Statistical Modeling</span>
-            </p>
-            <p class="text-[11px] text-slate-700">Hypothesis testing, linear & logistic regression.</p>
-          </div>
-          <div class="space-y-0.5">
-            <p class="font-bold text-red-700 flex items-center space-x-1">
-              <i class="fa-solid fa-network-wired text-amber-500"></i>
-              <span>Machine Learning</span>
-            </p>
-            <p class="text-[11px] text-slate-700">Classification, K-Means clustering & pipelines.</p>
-          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Predicting DVD rental durations and conducting hypothesis testing on feature significance using OLS regression and machine learning models in Python[span_36](start_span)[span_36](end_span). Evaluated rental behaviors to optimize inventory turnaround and customer forecasting.
+          </p>
         </div>
 
-        <!-- Tech Badges with Logos -->
-        <div class="flex flex-wrap gap-2 pt-1">
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
-            <i class="fa-brands fa-python"></i><span>Python</span>
-          </span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
-            <i class="fa-solid fa-table"></i><span>Pandas</span>
-          </span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
-            <i class="fa-solid fa-calculator"></i><span>SciPy</span>
-          </span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
-            <i class="fa-solid fa-chart-area"></i><span>Seaborn</span>
-          </span>
-          <span class="px-3 py-1 rounded-full bg-slate-900 text-amber-400 font-bold text-[10px] flex items-center space-x-1">
-            <i class="fa-solid fa-cubes"></i><span>NumPy</span>
-          </span>
+        <!-- Project 3: Antarctic Penguin Species Clustering -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-amber-400 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Clustering Antarctic Penguin Species</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_37](start_span)[span_37](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Unsupervised K-Means clustering and hypothesis testing on the Palmer Archipelago Antarctic Penguin dataset to identify structural species groupings and validate morphological variance[span_38](start_span)[span_38](end_span).
+          </p>
         </div>
 
-        <div class="pt-2">
-          <a href="https://github.com/khanarfaa03" target="_blank" class="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl bg-red-700 hover:bg-red-800 text-white font-bold text-xs shadow transition-all">
-            <i class="fa-brands fa-github"></i>
-            <span>See the code on GitHub</span>
-          </a>
+        <!-- Project 4: Agricultural Hypothesis Testing -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-red-600 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Agricultural Hypothesis Testing & Yield Prediction</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_39](start_span)[span_39](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Statistical hypothesis testing and predictive modeling pipeline to evaluate agricultural yields, crop health, and environmental factors using Python[span_40](start_span)[span_40](end_span). Analyzed soil chemistry and weather metrics to establish performance benchmarks.
+          </p>
         </div>
 
+        <!-- Project 5: Gender Soccer Goals Hypothesis Testing -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-amber-400 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Gender Soccer Goals Hypothesis Testing</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_41](start_span)[span_41](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Statistical hypothesis testing to determine if more goals are scored in official FIFA World Cup women's soccer matches than men's using non-parametric inference[span_42](start_span)[span_42](end_span). Processed historical match outcomes to evaluate scoring distributions.
+          </p>
+        </div>
+
+        <!-- Project 6: Car Insurance Claim Prediction -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-red-600 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Car Insurance Claim Prediction</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_43](start_span)[span_43](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Evaluating predictive models to forecast auto insurance claims and optimize risk assessment accuracy using customer demographic data[span_44](start_span)[span_44](end_span). Applied classification algorithms to price risk profiles effectively.
+          </p>
+        </div>
+
+        <!-- Project 7: NYC Airbnb Data Integration -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-amber-400 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">NYC Airbnb Data Integration Pipeline</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_45](start_span)[span_45](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> A Python-based data integration pipeline that extracts, merges, and cleans NYC Airbnb listing data across multiple file formats (.csv, .tsv, .xlsx) for market trend analysis[span_46](start_span)[span_46](end_span). Resolved structural discrepancies to unify disparate data sources.
+          </p>
+        </div>
+
+        <!-- Project 8: Customer Analytics Data Optimization -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-red-600 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Customer Analytics Data Optimization</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_47](start_span)[span_47](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> A data preparation and storage optimization pipeline designed for Training Data Ltd. to efficiently process large customer datasets for job-seeking prediction models[span_48](start_span)[span_48](end_span). Streamlined query speeds and memory allocation.
+          </p>
+        </div>
+
+        <!-- Project 9: Datacamp Analyzing Crime in Los Angeles -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-amber-400 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Analyzing Crime in Los Angeles</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_49](start_span)[span_49](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Exploratory Data Analysis (EDA) of Los Angeles Police Department (LAPD) crime data using Python and Pandas[span_50](start_span)[span_50](end_span). Identifies peak crime hours, high-risk nighttime locations, and demographic crime patterns to support public safety insights[span_51](start_span)[span_51](end_span).
+          </p>
+        </div>
+
+        <!-- Project 10: Nobel Prize Data Analysis -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-red-600 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Nobel Prize Historical Data Analysis</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_52](start_span)[span_52](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Exploratory data analysis and visualization of Nobel Prize winners (1901–2023) using Python, pandas, and seaborn to uncover historical trends, gender distributions, and birthplace demographics[span_53](start_span)[span_53](end_span).
+          </p>
+        </div>
+
+        <!-- Project 11: NYC SAT Data Science -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-amber-400 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">NYC Public School SAT Performance Analysis</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_54](start_span)[span_54](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> Quantitative analysis of NYC public school SAT performance using Python and Pandas, examining subject benchmarks, school district disparities, and regional score dispersion[span_55](start_span)[span_55](end_span).
+          </p>
+        </div>
+
+        <!-- Project 12: Netflix Data Analysis -->
+        <div class="bg-white p-6 rounded-2xl border-4 border-red-600 shadow-xl space-y-3">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div class="flex items-center space-x-2">
+              <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+              <h3 class="font-bold text-sm sm:text-base text-slate-900">Netflix Movie Catalog Data Analysis</h3>
+            </div>
+            <span class="text-xs text-slate-500 font-bold"><i class="fa-brands fa-github text-amber-600 mr-1"></i>Repository Verified[span_56](start_span)[span_56](end_span)</span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong class="text-slate-900">Detailed Case Study Summary:</strong> A DataCamp exploratory data analysis project filtering and calculating duration and genre statistics for 1990s movies in Python[span_57](start_span)[span_57](end_span). Analyzing historical Netflix movie data to unveil content evolution and strategic catalog shifts[span_58](start_span)[span_58](end_span).
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-6 text-center">
+        <a href="https://github.com/khanarfaa03" target="_blank" class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-900 font-black text-xs shadow-lg transition-all">
+          <i class="fa-brands fa-github text-lg"></i>
+          <span>View All Repositories on GitHub</span>
+        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- 5. EXPERIENCE WITH COMPREHENSIVE REPORT SECTION -->
+  <!-- 5. CORPORATE OPERATIONS INTERNSHIP SECTION -->
   <section id="experience" class="py-12 bg-red-950 border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -459,7 +552,7 @@
             </p>
           </div>
 
-          <!-- Report Module 2 (Rewritten in First Person) -->
+          <!-- Report Module 2 -->
           <div class="p-4 rounded-xl bg-amber-50 border border-amber-300 space-y-2">
             <div class="flex items-center space-x-2">
               <span class="w-6 h-6 rounded-full bg-amber-500 text-slate-900 text-xs font-bold flex items-center justify-center">2</span>
@@ -506,13 +599,61 @@
     </div>
   </section>
 
-  <!-- 6. EDUCATION SECTION -->
-  <section id="education" class="py-12 bg-red-900 border-b-2 border-red-950">
+  <!-- 6. INTERNSHIP EXPERIENCE PRESENTATION SECTION -->
+  <section id="presentation" class="py-12 bg-red-900 border-b-2 border-red-950 grid-pattern">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="flex items-center space-x-2 mb-2">
+        <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">06. Internship Presentation & Walkthrough</span>
+      </div>
+
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
+        Internship Experience Presentation Deck
+      </h2>
+
+      <div class="bg-white p-6 sm:p-10 rounded-2xl border-4 border-amber-400 shadow-xl space-y-6">
+        
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 rounded-xl bg-red-700 text-white flex items-center justify-center text-xl font-bold shadow">
+            <i class="fa-solid fa-person-chalkboard"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900">Comprehensive Visual & Strategic Walkthrough</h3>
+            <p class="text-red-700 font-serif italic text-xs">Uday Foundation Community Initiative Summary Deck</p>
+          </div>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-800 leading-relaxed font-normal">
+          During my tenure at Uday Foundation, I compiled a thorough visual slide deck documenting the end-to-end lifecycle of the "Health with Dignity" initiative. This presentation details our operational metrics, tax compliance workflows (Form 10BD/10BE), inventory distribution logistics, and empirical takeaways from managing a volunteer-driven non-profit organization in New Delhi.
+        </p>
+
+        <div class="p-4 rounded-xl bg-amber-50 border-2 border-amber-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center space-x-3">
+            <i class="fa-solid fa-file-powerpoint text-red-600 text-3xl"></i>
+            <div>
+              <p class="font-bold text-slate-900 text-xs sm:text-sm">Interactive Internship Presentation</p>
+              <p class="text-[11px] text-slate-600">Access the full slideshow detailing project execution and results.</p>
+            </div>
+          </div>
+          <a href="https://lnkd.in/p/g6vDEF9h" target="_blank" class="px-5 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs shadow-md transition-all flex items-center space-x-2 shrink-0">
+            <i class="fa-solid fa-external-link-alt"></i>
+            <span>View Presentation</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. EDUCATION SECTION -->
+  <section id="education" class="py-12 bg-red-950 border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex items-center space-x-2 mb-2">
         <span class="w-8 h-1.5 bg-amber-400 rounded-full"></span>
-        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">06. Academic Foundations</span>
+        <span class="text-amber-400 font-black uppercase text-xs tracking-widest">07. Academic Foundations</span>
       </div>
 
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-6">
