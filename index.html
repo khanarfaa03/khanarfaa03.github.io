@@ -9,7 +9,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -83,11 +83,11 @@
     }
     .interactive-card:hover {
       transform: translateY(-4px) scale(1.01);
-      box-shadow: 0 12px 25px -5px rgba(245, 158, 11, 0.25), 0 8px 10px -6px rgba(220, 38, 38, 0.3);
+      box-shadow: 0 14px 28px -5px rgba(245, 158, 11, 0.3), 0 10px 12px -6px rgba(220, 38, 38, 0.35);
     }
 
-    .quote-box-glow {
-      box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+    .quote-card-shine {
+      box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.4), 0 0 15px rgba(220, 38, 38, 0.3);
     }
   </style>
 </head>
@@ -135,13 +135,13 @@
     </div>
   </nav>
 
-  <!-- SECTION 1: EXPLANATORY MAIN INTRODUCTION WITH PROMINENT QUOTE -->
+  <!-- SECTION 1: EXPLANATORY MAIN INTRODUCTION WITH ENHANCED QUOTE CARD -->
   <section id="intro" class="py-14 bg-hero-grid relative overflow-hidden border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="bg-white p-7 sm:p-11 rounded-3xl border-4 border-amber-400 shadow-2xl space-y-6 relative overflow-hidden">
         
-        <!-- Decorative Header Elements -->
+        <!-- Header Badges -->
         <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
           <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-red-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm">
             <i class="fa-solid fa-user-graduate text-amber-300"></i>
@@ -160,23 +160,35 @@
           </h1>
         </div>
 
-        <!-- HIGHLY HIGHLIGHTED QUOTE (STANDS OUT AFTER NAME & BEFORE INTRO) -->
-        <div class="quote-box-glow my-6 p-5 sm:p-7 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 border-4 border-red-700 text-slate-950 relative overflow-hidden">
-          <div class="flex items-center justify-center space-x-3 text-center">
-            <i class="fa-solid fa-quote-left text-red-700 text-2xl sm:text-4xl shrink-0"></i>
-            <div>
-              <p class="font-serif italic font-extrabold text-lg sm:text-2xl text-slate-950 tracking-wide leading-relaxed">
-                "Success doesn't come to you, you go to it"
-              </p>
-              <p class="font-sans not-italic font-black text-red-900 text-xs sm:text-sm uppercase tracking-widest mt-1">
-                — Arfaa Khan
-              </p>
+        <!-- NEWLY DESIGNED INTERESTING QUOTE BOX (STANDS OUT PROMINENTLY) -->
+        <div class="quote-card-shine my-6 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 border-4 border-amber-300 text-slate-950 relative overflow-hidden">
+          <div class="absolute -right-6 -bottom-6 text-slate-950/10 text-9xl pointer-events-none">
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+          <div class="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 rounded-2xl bg-slate-950 text-amber-400 flex items-center justify-center text-xl shrink-0 shadow-lg ring-2 ring-amber-200">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <div>
+                <p class="font-serif italic font-black text-xl sm:text-2xl md:text-3xl text-slate-950 tracking-tight leading-tight">
+                  "Success doesn't come to you, you go to it"
+                </p>
+                <div class="mt-2 flex items-center space-x-2">
+                  <span class="w-6 h-1 bg-red-800 rounded-full"></span>
+                  <p class="font-sans not-italic font-black text-red-900 text-xs sm:text-sm uppercase tracking-widest">
+                    Arfaa Khan
+                  </p>
+                </div>
+              </div>
             </div>
-            <i class="fa-solid fa-quote-right text-red-700 text-2xl sm:text-4xl shrink-0"></i>
+            <span class="hidden md:inline-block px-3.5 py-1.5 rounded-full bg-white/90 text-red-900 font-black text-[10px] uppercase tracking-wider shrink-0 shadow">
+              Personal Motto
+            </span>
           </div>
         </div>
 
-        <!-- Explanatory Profile Introduction -->
+        <!-- Profile Introduction -->
         <div class="space-y-4 text-xs sm:text-sm text-slate-800 leading-relaxed font-normal">
           <p class="bg-red-50/80 p-4 rounded-2xl border-l-4 border-red-700 italic text-slate-900">
             Welcome to my personal corporate portfolio. I am a 4-year BBA (Hons.) student at Jaypee Institute of Information Technology (Jaypee Business School) with a sharp analytical focus on corporate finance, data governance, and automated financial modeling.
@@ -186,7 +198,7 @@
           </p>
         </div>
 
-        <!-- Visual Skill Badges Bar -->
+        <!-- Tool Badges -->
         <div class="pt-3 border-t border-slate-200">
           <p class="text-[11px] font-extrabold uppercase text-slate-500 tracking-wider mb-2.5">Technical Toolkit & Platforms:</p>
           <div class="flex flex-wrap gap-2 text-xs font-bold">
@@ -245,13 +257,12 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <!-- Financial & Statutory -->
-        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-xl space-y-4 interactive-card">
-          <div class="flex items-center justify-between border-b border-amber-200 pb-3">
+        <div class="bg-amber-50 p-6 rounded-2xl border-2 border-amber-400 shadow-xl space-y-4 interactive-card">
+          <div class="flex items-center justify-between border-b border-amber-300 pb-3">
             <div class="w-10 h-10 rounded-xl bg-red-700 text-white flex items-center justify-center text-base font-bold shadow">
               <i class="fa-solid fa-calculator"></i>
             </div>
-            <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-black text-[10px] uppercase">Finance & Tax</span>
+            <span class="px-2.5 py-1 rounded-md bg-amber-200 text-amber-950 font-black text-[10px] uppercase">Finance & Tax</span>
           </div>
           <h3 class="font-bold text-base text-slate-900">Financial & Statutory Compliance</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
@@ -259,13 +270,12 @@
           </p>
         </div>
 
-        <!-- Technical Analytics -->
-        <div class="bg-white p-6 rounded-2xl border-2 border-red-600 shadow-xl space-y-4 interactive-card">
-          <div class="flex items-center justify-between border-b border-red-200 pb-3">
+        <div class="bg-orange-50 p-6 rounded-2xl border-2 border-orange-400 shadow-xl space-y-4 interactive-card">
+          <div class="flex items-center justify-between border-b border-orange-300 pb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-base font-bold shadow">
               <i class="fa-solid fa-code"></i>
             </div>
-            <span class="px-2.5 py-1 rounded-md bg-red-100 text-red-900 font-black text-[10px] uppercase">Data Science</span>
+            <span class="px-2.5 py-1 rounded-md bg-orange-200 text-orange-950 font-black text-[10px] uppercase">Data Science</span>
           </div>
           <h3 class="font-bold text-base text-slate-900">Data Analytics & Automation</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
@@ -273,13 +283,12 @@
           </p>
         </div>
 
-        <!-- Commercial Art & Operations -->
-        <div class="bg-white p-6 rounded-2xl border-2 border-amber-400 shadow-xl space-y-4 interactive-card">
-          <div class="flex items-center justify-between border-b border-amber-200 pb-3">
+        <div class="bg-amber-50 p-6 rounded-2xl border-2 border-amber-400 shadow-xl space-y-4 interactive-card">
+          <div class="flex items-center justify-between border-b border-amber-300 pb-3">
             <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-base font-bold shadow">
               <i class="fa-solid fa-paintbrush"></i>
             </div>
-            <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 font-black text-[10px] uppercase">Creative & Ops</span>
+            <span class="px-2.5 py-1 rounded-md bg-amber-200 text-amber-950 font-black text-[10px] uppercase">Creative & Ops</span>
           </div>
           <h3 class="font-bold text-base text-slate-900">Commercial Art & Operations</h3>
           <p class="text-xs text-slate-700 font-normal leading-relaxed">
@@ -292,7 +301,7 @@
     </div>
   </section>
 
-  <!-- SECTION 3: ALL 9 CERTIFICATIONS IN DISTINCT MULTI-SHADED CARDS -->
+  <!-- SECTION 3: ALL 9 CERTIFICATIONS (COLOR-CODED IN YELLOW, ORANGE, PINK & BROWN SHADES) -->
   <section id="certifications" class="py-14 bg-cert-texture border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -301,25 +310,24 @@
         <span class="text-amber-400 font-black uppercase text-xs tracking-widest">03. Verified Industry Credentials</span>
       </div>
 
-      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-2">
+      <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-8">
         Certifications & Professional Knowledge Gained
       </h2>
-      <p class="text-amber-200 text-xs mb-8">Comprehensive breakdown of all 9 specialized certifications, colored in dynamic multi-shaded cards:</p>
 
       <!-- TOP PRIORITY CERTIFICATES: IISDT & NISM -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         
-        <!-- Priority 1: IISDT (Golden Amber Highlight Shade) -->
-        <div class="bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 p-6 rounded-2xl border-4 border-white shadow-2xl text-slate-950 interactive-card relative overflow-hidden">
-          <div class="absolute -right-4 -bottom-4 text-amber-200/50 text-8xl">
+        <!-- Priority 1: IISDT (Warm Golden Yellow Shade) -->
+        <div class="bg-amber-300 p-6 rounded-2xl border-4 border-amber-500 shadow-2xl text-slate-950 interactive-card relative overflow-hidden">
+          <div class="absolute -right-4 -bottom-4 text-amber-500/20 text-8xl">
             <i class="fa-solid fa-building-columns"></i>
           </div>
           <div class="relative z-10 space-y-3">
             <div class="flex items-center justify-between border-b-2 border-slate-950/20 pb-2">
-              <span class="px-3 py-1 rounded-full bg-slate-950 text-amber-400 font-black text-[10px] uppercase tracking-wider">
+              <span class="px-3 py-1 rounded-full bg-slate-950 text-amber-300 font-black text-[10px] uppercase tracking-wider">
                 Priority Finance Certificate
               </span>
-              <i class="fa-solid fa-certificate text-xl text-red-700"></i>
+              <i class="fa-solid fa-certificate text-xl text-amber-800"></i>
             </div>
             <h3 class="font-extrabold text-lg text-slate-950">
               Banking and Finance Management — IISDT
@@ -330,22 +338,22 @@
           </div>
         </div>
 
-        <!-- Priority 2: NISM (Deep Crimson Gold Highlight Shade) -->
-        <div class="bg-gradient-to-br from-red-600 via-red-700 to-red-800 p-6 rounded-2xl border-4 border-amber-400 shadow-2xl text-white interactive-card relative overflow-hidden">
-          <div class="absolute -right-4 -bottom-4 text-red-900/40 text-8xl">
+        <!-- Priority 2: NISM (Bright Sunset Orange Shade) -->
+        <div class="bg-orange-400 p-6 rounded-2xl border-4 border-orange-600 shadow-2xl text-slate-950 interactive-card relative overflow-hidden">
+          <div class="absolute -right-4 -bottom-4 text-orange-600/20 text-8xl">
             <i class="fa-solid fa-chart-line"></i>
           </div>
           <div class="relative z-10 space-y-3">
-            <div class="flex items-center justify-between border-b-2 border-amber-400/30 pb-2">
-              <span class="px-3 py-1 rounded-full bg-amber-400 text-slate-950 font-black text-[10px] uppercase tracking-wider">
+            <div class="flex items-center justify-between border-b-2 border-slate-950/20 pb-2">
+              <span class="px-3 py-1 rounded-full bg-slate-950 text-orange-300 font-black text-[10px] uppercase tracking-wider">
                 Financial Literacy Excellence (97.0%)
               </span>
-              <i class="fa-solid fa-award text-xl text-amber-300"></i>
+              <i class="fa-solid fa-award text-xl text-orange-900"></i>
             </div>
-            <h3 class="font-extrabold text-lg text-white">
+            <h3 class="font-extrabold text-lg text-slate-950">
               Certificate of Excellence in Financial Literacy — NISM
             </h3>
-            <p class="text-xs text-amber-100 font-normal leading-relaxed">
+            <p class="text-xs text-slate-950 font-medium leading-relaxed">
               <strong>Knowledge Gained:</strong> Earned in collaboration with Kotak Securities Ltd. Achieved a 97.0% evaluation score in securities markets, investment analysis, personal finance management, interest rate dynamics, and financial planning principles.
             </p>
           </div>
@@ -353,82 +361,82 @@
 
       </div>
 
-      <!-- REMAINING 7 CERTIFICATIONS GRID (MULTI-SHADED CARDS) -->
+      <!-- REMAINING 7 CERTIFICATIONS GRID (COLOR SHADES: YELLOW, ORANGE, PINK, BROWN) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         
-        <!-- Cert 3: Data Governance Fundamentals (Warm White with Amber Shade) -->
-        <div class="bg-gradient-to-b from-white to-amber-50 p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-amber-200 pb-2">
-            <i class="fa-solid fa-database text-red-700 text-lg"></i>
+        <!-- Cert 3: Data Governance Fundamentals (Warm Soft Yellow) -->
+        <div class="bg-amber-100 p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-amber-300 pb-2">
+            <i class="fa-solid fa-database text-amber-800 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Data Governance Fundamentals</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> DataCamp certification in essential concepts for managing and securing organizational data. Acquired skills in data privacy, security/protection measures, data quality control, data stewardship, and regulatory standards alignment.
           </p>
         </div>
 
-        <!-- Cert 4: AI Leadership Fundamentals (Warm White with Red Shade) -->
-        <div class="bg-gradient-to-b from-white to-red-50 p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-red-200 pb-2">
-            <i class="fa-solid fa-chess-queen text-red-700 text-lg"></i>
+        <!-- Cert 4: AI Leadership Fundamentals (Peach Orange Shade) -->
+        <div class="bg-orange-100 p-5 rounded-2xl border-2 border-orange-400 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-orange-300 pb-2">
+            <i class="fa-solid fa-chess-queen text-orange-800 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">AI Leadership Fundamentals</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> DataCamp certification validating core strategic, ethical, and practical skills needed to guide AI initiatives from business case development through deployment. Covers AI investment cases, governance, and protecting AI systems against security threats.
           </p>
         </div>
 
-        <!-- Cert 5: GDPR & Data Privacy Specialist (Yellow-Amber Tint Shade) -->
-        <div class="bg-gradient-to-b from-amber-50 to-amber-100/60 p-5 rounded-2xl border-2 border-amber-500 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-amber-300 pb-2">
-            <i class="fa-solid fa-shield-cat text-red-700 text-lg"></i>
+        <!-- Cert 5: GDPR & Data Privacy Specialist (Vibrant Rose Pink Shade) -->
+        <div class="bg-pink-100 p-5 rounded-2xl border-2 border-pink-400 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-pink-300 pb-2">
+            <i class="fa-solid fa-shield-cat text-pink-800 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">GDPR & Data Privacy Specialist</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> Specialist Certification covering data protection regulations, privacy principles, and security controls. Demonstrates expertise in ensuring compliance under GDPR and global privacy laws while fostering digital trust.
           </p>
         </div>
 
-        <!-- Cert 6: EU AI Act Literacy Specialist (Rose Red Tint Shade) -->
-        <div class="bg-gradient-to-b from-red-50 to-red-100/60 p-5 rounded-2xl border-2 border-red-500 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-red-200 pb-2">
-            <i class="fa-solid fa-robot text-red-700 text-lg"></i>
+        <!-- Cert 6: EU AI Act Literacy Specialist (Warm Terracotta Brown Shade) -->
+        <div class="bg-amber-200/70 p-5 rounded-2xl border-2 border-amber-600 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-amber-400 pb-2">
+            <i class="fa-solid fa-robot text-amber-900 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">EU AI Act Literacy Specialist</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> Focused on building AI literacy skills under Article 4 of the EU AI Act. Covers AI risk classifications, legal compliance requirements, and frameworks needed to safely integrate AI within enterprise environments.
           </p>
         </div>
 
-        <!-- Cert 7: Adobe Marketing Specialist (Warm Gold Tint Shade) -->
-        <div class="bg-gradient-to-b from-amber-100/80 to-amber-200/50 p-5 rounded-2xl border-2 border-amber-500 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-amber-300 pb-2">
-            <i class="fa-solid fa-bullhorn text-red-700 text-lg"></i>
+        <!-- Cert 7: Adobe Marketing Specialist (Warm Amber Gold) -->
+        <div class="bg-amber-200 p-5 rounded-2xl border-2 border-amber-500 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-amber-400 pb-2">
+            <i class="fa-solid fa-bullhorn text-amber-900 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Marketing Specialist</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> Comprehensive 5-course program by Adobe and Coursera. Developed expertise in digital and multichannel marketing strategies, generative AI content creation, social media strategy, SEO, and marketing automation.
           </p>
         </div>
 
-        <!-- Cert 8: Adobe Content Creator (Crimson Soft Tint Shade) -->
-        <div class="bg-gradient-to-b from-red-100/80 to-red-200/50 p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-red-300 pb-2">
-            <i class="fa-solid fa-clapperboard text-red-700 text-lg"></i>
+        <!-- Cert 8: Adobe Content Creator (Soft Coral Pink) -->
+        <div class="bg-pink-200 p-5 rounded-2xl border-2 border-pink-400 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-pink-300 pb-2">
+            <i class="fa-solid fa-clapperboard text-pink-900 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Content Creator Professional</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> Gained practical knowledge of content creation, creative tools, visual communication, and digital content workflows. Built skills in producing engaging digital content across platforms.
           </p>
         </div>
 
-        <!-- Cert 9: Adobe Graphic Designer (Pure White Golden Glow) -->
-        <div class="bg-gradient-to-b from-white to-amber-100 p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card md:col-span-2 lg:col-span-1">
-          <div class="flex items-center space-x-2 border-b border-amber-200 pb-2">
-            <i class="fa-solid fa-paintbrush text-red-700 text-lg"></i>
+        <!-- Cert 9: Adobe Graphic Designer (Warm Ochre Brown) -->
+        <div class="bg-stone-200 p-5 rounded-2xl border-2 border-stone-400 shadow-md space-y-2.5 interactive-card md:col-span-2 lg:col-span-1">
+          <div class="flex items-center space-x-2 border-b border-stone-300 pb-2">
+            <i class="fa-solid fa-paintbrush text-stone-800 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Graphic Designer Professional</h3>
           </div>
-          <p class="text-[11px] text-slate-700 leading-relaxed">
+          <p class="text-[11px] text-slate-800 leading-relaxed">
             <strong class="text-slate-900">Knowledge Gained:</strong> Sharpened skills in graphic design tools (Photoshop, Illustrator), visual communication, layout, typography, color theory, client workflows, and digital asset preparation.
           </p>
         </div>
@@ -438,7 +446,7 @@
     </div>
   </section>
 
-  <!-- SECTION 4: 12 PYTHON PROJECTS CASE STUDY (CLEANED TEXT) -->
+  <!-- SECTION 4: 12 PYTHON PROJECTS (EACH BOX COLORED IN YELLOW, ORANGE, PINK, BROWN) -->
   <section id="projects" class="py-14 bg-projects-dots border-b-2 border-red-950">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -454,134 +462,134 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         
-        <!-- Project 1 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 1 (Bright Yellow) -->
+        <div class="bg-amber-100 p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-amber-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">1. Calorie Nutrition Calculator</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-amber-800 text-amber-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Built a custom Python calculation engine that processes food composition datasets to calculate calorie intake, macronutrient distributions, and metabolic metrics.
           </p>
         </div>
 
-        <!-- Project 2 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 2 (Sunset Orange) -->
+        <div class="bg-orange-100 p-5 rounded-2xl border-2 border-orange-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-orange-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">2. Movie Rental Duration Prediction</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-orange-800 text-orange-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Predicting DVD rental durations and conducting hypothesis testing on feature significance using OLS regression and machine learning models in Python.
           </p>
         </div>
 
-        <!-- Project 3 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 3 (Soft Rose Pink) -->
+        <div class="bg-pink-100 p-5 rounded-2xl border-2 border-pink-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-pink-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">3. Clustering Antarctic Penguin Species</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-pink-800 text-pink-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Unsupervised K-Means clustering and hypothesis testing on the Palmer Archipelago Antarctic Penguin dataset to identify structural species groupings.
           </p>
         </div>
 
-        <!-- Project 4 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 4 (Warm Earthy Brown) -->
+        <div class="bg-stone-200 p-5 rounded-2xl border-2 border-stone-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-stone-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">4. Agricultural Yield Hypothesis Testing</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-stone-800 text-stone-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Statistical hypothesis testing and predictive modeling pipeline to evaluate agricultural yields, crop health, and environmental factors using Python.
           </p>
         </div>
 
-        <!-- Project 5 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 5 (Warm Gold Yellow) -->
+        <div class="bg-amber-200 p-5 rounded-2xl border-2 border-amber-500 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-amber-400 pb-2">
             <h3 class="font-bold text-sm text-slate-900">5. Gender Soccer Goals Hypothesis Testing</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-amber-900 text-amber-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Statistical hypothesis testing to determine if more goals are scored in official FIFA World Cup women's soccer matches than men's using non-parametric inference.
           </p>
         </div>
 
-        <!-- Project 6 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 6 (Vibrant Peach Orange) -->
+        <div class="bg-orange-200 p-5 rounded-2xl border-2 border-orange-500 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-orange-400 pb-2">
             <h3 class="font-bold text-sm text-slate-900">6. Car Insurance Claim Risk Prediction</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-orange-900 text-orange-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Evaluating predictive models to forecast auto insurance claims and optimize risk assessment accuracy using customer demographic data.
           </p>
         </div>
 
-        <!-- Project 7 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 7 (Soft Coral Pink) -->
+        <div class="bg-pink-200 p-5 rounded-2xl border-2 border-pink-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-pink-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">7. NYC Airbnb Data Integration Pipeline</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-pink-900 text-pink-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> A Python-based data integration pipeline that extracts, merges, and cleans NYC Airbnb listing data across multiple file formats (.csv, .tsv, .xlsx).
           </p>
         </div>
 
-        <!-- Project 8 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 8 (Warm Brown Tone) -->
+        <div class="bg-amber-200/80 p-5 rounded-2xl border-2 border-amber-600 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-amber-400 pb-2">
             <h3 class="font-bold text-sm text-slate-900">8. Customer Analytics Data Optimization</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-amber-950 text-amber-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Data preparation and storage optimization pipeline designed for Training Data Ltd. to process large customer datasets for job-seeking prediction models.
           </p>
         </div>
 
-        <!-- Project 9 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 9 (Lemon Yellow) -->
+        <div class="bg-yellow-100 p-5 rounded-2xl border-2 border-yellow-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-yellow-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">9. Analyzing LAPD Crime Trends in Los Angeles</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-yellow-800 text-yellow-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Exploratory Data Analysis (EDA) of LAPD crime data using Python and Pandas to identify peak crime hours and high-risk nighttime locations.
           </p>
         </div>
 
-        <!-- Project 10 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 10 (Deep Orange) -->
+        <div class="bg-orange-100 p-5 rounded-2xl border-2 border-orange-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-orange-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">10. Nobel Prize Historical Data Analysis</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-orange-800 text-orange-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Exploratory data analysis and visualization of Nobel Prize winners (1901–2023) using Python, pandas, and seaborn to uncover historical demographic trends.
           </p>
         </div>
 
-        <!-- Project 11 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 11 (Pastel Pink) -->
+        <div class="bg-pink-100 p-5 rounded-2xl border-2 border-pink-300 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-pink-200 pb-2">
             <h3 class="font-bold text-sm text-slate-900">11. NYC Public School SAT Performance</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-pink-800 text-pink-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Quantitative analysis of NYC public school SAT performance using Python and Pandas, examining subject benchmarks and regional score dispersion.
           </p>
         </div>
 
-        <!-- Project 12 -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-xl space-y-2 interactive-card">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+        <!-- Project 12 (Deep Ochre Brown) -->
+        <div class="bg-stone-200 p-5 rounded-2xl border-2 border-stone-400 shadow-xl space-y-2 interactive-card">
+          <div class="flex items-center justify-between border-b border-stone-300 pb-2">
             <h3 class="font-bold text-sm text-slate-900">12. Netflix Movie Catalog Analysis</h3>
-            <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
+            <span class="px-2 py-0.5 rounded bg-stone-800 text-stone-100 font-bold text-[10px]">Python</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">
+          <p class="text-xs text-slate-800 leading-relaxed">
             <strong>Case Study:</strong> Exploratory data analysis project filtering and calculating duration and genre statistics for 1990s movies in Python.
           </p>
         </div>
@@ -626,29 +634,29 @@
         <!-- First Person Operational Modules -->
         <div class="space-y-4 text-xs sm:text-sm text-slate-800">
           
-          <div class="p-4 rounded-xl bg-red-50 border border-red-200 space-y-1">
-            <h4 class="font-bold text-red-900">1. NGO Background & Health Drive Mission</h4>
+          <div class="p-4 rounded-xl bg-amber-50 border border-amber-300 space-y-1">
+            <h4 class="font-bold text-amber-950">1. NGO Background & Health Drive Mission</h4>
             <p class="text-xs text-slate-700 leading-relaxed">
               Founded by Rahul Verma and Tulika Verma, Uday Foundation provides critical healthcare support and emergency food drives outside major government hospitals in New Delhi.
             </p>
           </div>
 
-          <div class="p-4 rounded-xl bg-amber-50 border border-amber-300 space-y-1">
-            <h4 class="font-bold text-amber-950">2. Statutory Tax Compliance (Form 10BD & Form 10BE Integration)</h4>
+          <div class="p-4 rounded-xl bg-orange-50 border border-orange-300 space-y-1">
+            <h4 class="font-bold text-orange-950">2. Statutory Tax Compliance (Form 10BD & Form 10BE Integration)</h4>
             <p class="text-xs text-slate-700 leading-relaxed">
               I executed statutory tax compliance tasks under Income Tax Department regulations, where non-profit organizations must file an annual statement of donations (**Form 10BD**). I reconciled donor KYC entries (PAN, Aadhar, contact details) across central databases to generate and mail verified **Form 10BE** Section 80G tax exemption certificates to individual donors.
             </p>
           </div>
 
-          <div class="p-4 rounded-xl bg-red-50 border border-red-200 space-y-1">
-            <h4 class="font-bold text-red-900">3. In-Kind Inventory & Operational Logistics</h4>
+          <div class="p-4 rounded-xl bg-pink-50 border border-pink-300 space-y-1">
+            <h4 class="font-bold text-pink-950">3. In-Kind Inventory & Operational Logistics</h4>
             <p class="text-xs text-slate-700 leading-relaxed">
               I managed physical collection drives and on-ground donor receipt operations. Organized, sorted, and cataloged incoming in-kind contributions including clothes, blankets, toys, medical aid, and hygiene kits for structured relief distribution.
             </p>
           </div>
 
-          <div class="p-4 rounded-xl bg-amber-50 border border-amber-300 space-y-1">
-            <h4 class="font-bold text-amber-950">4. Register Audits & Central MIS Reporting</h4>
+          <div class="p-4 rounded-xl bg-stone-100 border border-stone-300 space-y-1">
+            <h4 class="font-bold text-stone-900">4. Register Audits & Central MIS Reporting</h4>
             <p class="text-xs text-slate-700 leading-relaxed">
               I cross-checked manual receipt books and physical registers against master Microsoft Excel spreadsheets to eliminate duplicate entries, verify donor KYC credentials, and generate internal management information system (MIS) reports for NGO leadership.
             </p>
