@@ -8,8 +8,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts: Playfair Display (Serif/Italic) & Plus Jakarta Sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   
   <script>
     tailwind.config = {
@@ -38,12 +38,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Custom Geometric & Visual Texture Backgrounds per Section */
-    .bg-quote-banner {
-      background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #d97706 100%);
-      box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
-    }
-    
     .bg-hero-grid {
       background-color: #450a0a;
       background-image: radial-gradient(rgba(245, 158, 11, 0.15) 1px, transparent 1px),
@@ -84,7 +78,6 @@
       );
     }
 
-    /* Interactive Hover Animations */
     .interactive-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -93,33 +86,15 @@
       box-shadow: 0 12px 25px -5px rgba(245, 158, 11, 0.25), 0 8px 10px -6px rgba(220, 38, 38, 0.3);
     }
 
-    @keyframes pulse-slow {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.01); }
-    }
-    .animate-quote {
-      animation: pulse-slow 4s infinite ease-in-out;
+    .quote-box-glow {
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
     }
   </style>
 </head>
 <body class="font-sans antialiased text-slate-900 bg-red-950 text-sm relative">
 
-  <!-- TOP QUOTE BANNER (HIGHLY VISIBLE & HIGHLIGHTED) -->
-  <div class="bg-quote-banner text-slate-950 py-3.5 px-4 text-center border-b-4 border-red-700 relative z-50 animate-quote">
-    <div class="max-w-5xl mx-auto flex items-center justify-center space-x-3">
-      <i class="fa-solid fa-quote-left text-red-700 text-xl sm:text-2xl shrink-0"></i>
-      <p class="font-serif italic font-bold text-sm sm:text-base md:text-lg tracking-wide text-slate-950">
-        "Success doesn't come to you, you go to it"
-        <span class="font-sans not-italic font-black text-red-900 ml-2 text-xs sm:text-sm uppercase tracking-widest bg-amber-200/80 px-2.5 py-0.5 rounded-md border border-amber-500/50">
-          — Arfaa Khan
-        </span>
-      </p>
-      <i class="fa-solid fa-quote-right text-red-700 text-xl sm:text-2xl shrink-0"></i>
-    </div>
-  </div>
-
   <!-- NAVIGATION BAR -->
-  <nav class="sticky top-0 z-40 bg-red-900/95 backdrop-blur-md border-b-2 border-amber-400 shadow-2xl">
+  <nav class="sticky top-0 z-50 bg-red-900/95 backdrop-blur-md border-b-2 border-amber-400 shadow-2xl">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
@@ -160,7 +135,7 @@
     </div>
   </nav>
 
-  <!-- SECTION 1: EXPLANATORY MAIN INTRODUCTION -->
+  <!-- SECTION 1: EXPLANATORY MAIN INTRODUCTION WITH PROMINENT QUOTE -->
   <section id="intro" class="py-14 bg-hero-grid relative overflow-hidden border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -179,13 +154,26 @@
           </div>
         </div>
 
-        <div class="space-y-3">
-          <h1 class="font-serif italic font-bold text-3xl sm:text-5xl text-slate-900 tracking-tight leading-snug">
+        <div class="space-y-1">
+          <h1 class="font-serif italic font-bold text-4xl sm:text-6xl text-slate-900 tracking-tight leading-snug">
             Arfaa Khan
           </h1>
-          <p class="text-base sm:text-lg text-red-700 font-serif italic font-bold">
-            "BBA (Hons.) student specializing in corporate business, finance, and Python data analytics."
-          </p>
+        </div>
+
+        <!-- HIGHLY HIGHLIGHTED QUOTE (STANDS OUT AFTER NAME & BEFORE INTRO) -->
+        <div class="quote-box-glow my-6 p-5 sm:p-7 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 border-4 border-red-700 text-slate-950 relative overflow-hidden">
+          <div class="flex items-center justify-center space-x-3 text-center">
+            <i class="fa-solid fa-quote-left text-red-700 text-2xl sm:text-4xl shrink-0"></i>
+            <div>
+              <p class="font-serif italic font-extrabold text-lg sm:text-2xl text-slate-950 tracking-wide leading-relaxed">
+                "Success doesn't come to you, you go to it"
+              </p>
+              <p class="font-sans not-italic font-black text-red-900 text-xs sm:text-sm uppercase tracking-widest mt-1">
+                — Arfaa Khan
+              </p>
+            </div>
+            <i class="fa-solid fa-quote-right text-red-700 text-2xl sm:text-4xl shrink-0"></i>
+          </div>
         </div>
 
         <!-- Explanatory Profile Introduction -->
@@ -304,7 +292,7 @@
     </div>
   </section>
 
-  <!-- SECTION 3: ALL 9 CERTIFICATIONS (IISDT & NISM ON TOP) -->
+  <!-- SECTION 3: ALL 9 CERTIFICATIONS IN DISTINCT MULTI-SHADED CARDS -->
   <section id="certifications" class="py-14 bg-cert-texture border-b-2 border-red-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -316,12 +304,12 @@
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-2">
         Certifications & Professional Knowledge Gained
       </h2>
-      <p class="text-amber-200 text-xs mb-8">Comprehensive breakdown of all 9 specialized certifications, highlighting knowledge acquired:</p>
+      <p class="text-amber-200 text-xs mb-8">Comprehensive breakdown of all 9 specialized certifications, colored in dynamic multi-shaded cards:</p>
 
       <!-- TOP PRIORITY CERTIFICATES: IISDT & NISM -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         
-        <!-- Priority 1: IISDT -->
+        <!-- Priority 1: IISDT (Golden Amber Highlight Shade) -->
         <div class="bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 p-6 rounded-2xl border-4 border-white shadow-2xl text-slate-950 interactive-card relative overflow-hidden">
           <div class="absolute -right-4 -bottom-4 text-amber-200/50 text-8xl">
             <i class="fa-solid fa-building-columns"></i>
@@ -342,7 +330,7 @@
           </div>
         </div>
 
-        <!-- Priority 2: NISM -->
+        <!-- Priority 2: NISM (Deep Crimson Gold Highlight Shade) -->
         <div class="bg-gradient-to-br from-red-600 via-red-700 to-red-800 p-6 rounded-2xl border-4 border-amber-400 shadow-2xl text-white interactive-card relative overflow-hidden">
           <div class="absolute -right-4 -bottom-4 text-red-900/40 text-8xl">
             <i class="fa-solid fa-chart-line"></i>
@@ -365,83 +353,83 @@
 
       </div>
 
-      <!-- REMAINING 7 CERTIFICATIONS GRID -->
+      <!-- REMAINING 7 CERTIFICATIONS GRID (MULTI-SHADED CARDS) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         
-        <!-- Cert 3: Data Governance Fundamentals -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 3: Data Governance Fundamentals (Warm White with Amber Shade) -->
+        <div class="bg-gradient-to-b from-white to-amber-50 p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-amber-200 pb-2">
             <i class="fa-solid fa-database text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Data Governance Fundamentals</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_0](start_span)[span_0](end_span):</strong> DataCamp certification in essential concepts for managing and securing organizational data[span_1](start_span)[span_1](end_span). Acquired skills in data privacy, security/protection measures, data quality control, data stewardship, and regulatory standards alignment[span_2](start_span)[span_2](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> DataCamp certification in essential concepts for managing and securing organizational data. Acquired skills in data privacy, security/protection measures, data quality control, data stewardship, and regulatory standards alignment.
           </p>
         </div>
 
-        <!-- Cert 4: AI Leadership Fundamentals -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 4: AI Leadership Fundamentals (Warm White with Red Shade) -->
+        <div class="bg-gradient-to-b from-white to-red-50 p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-red-200 pb-2">
             <i class="fa-solid fa-chess-queen text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">AI Leadership Fundamentals</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_3](start_span)[span_3](end_span):</strong> DataCamp certification validating core strategic, ethical, and practical skills needed to guide AI initiatives from business case development through deployment[span_4](start_span)[span_4](end_span). Covers AI investment cases, governance, and protecting AI systems against security threats[span_5](start_span)[span_5](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> DataCamp certification validating core strategic, ethical, and practical skills needed to guide AI initiatives from business case development through deployment. Covers AI investment cases, governance, and protecting AI systems against security threats.
           </p>
         </div>
 
-        <!-- Cert 5: GDPR & Data Privacy Fundamentals Specialist -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 5: GDPR & Data Privacy Specialist (Yellow-Amber Tint Shade) -->
+        <div class="bg-gradient-to-b from-amber-50 to-amber-100/60 p-5 rounded-2xl border-2 border-amber-500 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-amber-300 pb-2">
             <i class="fa-solid fa-shield-cat text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">GDPR & Data Privacy Specialist</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_6](start_span)[span_6](end_span):</strong> Specialist Certification covering data protection regulations, privacy principles, and security controls[span_7](start_span)[span_7](end_span). Demonstrates expertise in ensuring compliance under GDPR and global privacy laws while fostering digital trust[span_8](start_span)[span_8](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> Specialist Certification covering data protection regulations, privacy principles, and security controls. Demonstrates expertise in ensuring compliance under GDPR and global privacy laws while fostering digital trust.
           </p>
         </div>
 
-        <!-- Cert 6: EU AI Act Literacy Specialist -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 6: EU AI Act Literacy Specialist (Rose Red Tint Shade) -->
+        <div class="bg-gradient-to-b from-red-50 to-red-100/60 p-5 rounded-2xl border-2 border-red-500 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-red-200 pb-2">
             <i class="fa-solid fa-robot text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">EU AI Act Literacy Specialist</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_9](start_span)[span_9](end_span):</strong> Focused on building AI literacy skills under Article 4 of the EU AI Act[span_10](start_span)[span_10](end_span). Covers AI risk classifications, legal compliance requirements, and frameworks needed to safely integrate AI within enterprise environments[span_11](start_span)[span_11](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> Focused on building AI literacy skills under Article 4 of the EU AI Act. Covers AI risk classifications, legal compliance requirements, and frameworks needed to safely integrate AI within enterprise environments.
           </p>
         </div>
 
-        <!-- Cert 7: Adobe Marketing Specialist -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 7: Adobe Marketing Specialist (Warm Gold Tint Shade) -->
+        <div class="bg-gradient-to-b from-amber-100/80 to-amber-200/50 p-5 rounded-2xl border-2 border-amber-500 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-amber-300 pb-2">
             <i class="fa-solid fa-bullhorn text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Marketing Specialist</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_12](start_span)[span_12](end_span):</strong> Comprehensive 5-course program by Adobe and Coursera[span_13](start_span)[span_13](end_span). Developed expertise in digital and multichannel marketing strategies, generative AI content creation, social media strategy, SEO, and marketing automation[span_14](start_span)[span_14](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> Comprehensive 5-course program by Adobe and Coursera. Developed expertise in digital and multichannel marketing strategies, generative AI content creation, social media strategy, SEO, and marketing automation.
           </p>
         </div>
 
-        <!-- Cert 8: Adobe Content Creator -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 8: Adobe Content Creator (Crimson Soft Tint Shade) -->
+        <div class="bg-gradient-to-b from-red-100/80 to-red-200/50 p-5 rounded-2xl border-2 border-red-600 shadow-md space-y-2.5 interactive-card">
+          <div class="flex items-center space-x-2 border-b border-red-300 pb-2">
             <i class="fa-solid fa-clapperboard text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Content Creator Professional</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_15](start_span)[span_15](end_span):</strong> Gained practical knowledge of content creation, creative tools, visual communication, and digital content workflows[span_16](start_span)[span_16](end_span). Built skills in producing engaging digital content across platforms[span_17](start_span)[span_17](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> Gained practical knowledge of content creation, creative tools, visual communication, and digital content workflows. Built skills in producing engaging digital content across platforms.
           </p>
         </div>
 
-        <!-- Cert 9: Adobe Graphic Designer -->
-        <div class="bg-white p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card md:col-span-2 lg:col-span-1">
-          <div class="flex items-center space-x-2 border-b border-slate-200 pb-2">
+        <!-- Cert 9: Adobe Graphic Designer (Pure White Golden Glow) -->
+        <div class="bg-gradient-to-b from-white to-amber-100 p-5 rounded-2xl border-2 border-amber-400 shadow-md space-y-2.5 interactive-card md:col-span-2 lg:col-span-1">
+          <div class="flex items-center space-x-2 border-b border-amber-200 pb-2">
             <i class="fa-solid fa-paintbrush text-red-700 text-lg"></i>
             <h3 class="font-bold text-xs sm:text-sm text-slate-900 uppercase">Adobe Graphic Designer Professional</h3>
           </div>
           <p class="text-[11px] text-slate-700 leading-relaxed">
-            <strong class="text-slate-900">Knowledge Gained[span_18](start_span)[span_18](end_span):</strong> Sharpened skills in graphic design tools (Photoshop, Illustrator), visual communication, layout, typography, color theory[span_19](start_span)[span_19](end_span), client workflows, and digital asset preparation[span_20](start_span)[span_20](end_span).
+            <strong class="text-slate-900">Knowledge Gained:</strong> Sharpened skills in graphic design tools (Photoshop, Illustrator), visual communication, layout, typography, color theory, client workflows, and digital asset preparation.
           </p>
         </div>
 
@@ -450,7 +438,7 @@
     </div>
   </section>
 
-  <!-- SECTION 4: 12 PYTHON PROJECTS CASE STUDY -->
+  <!-- SECTION 4: 12 PYTHON PROJECTS CASE STUDY (CLEANED TEXT) -->
   <section id="projects" class="py-14 bg-projects-dots border-b-2 border-red-950">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -462,7 +450,7 @@
       <h2 class="font-serif italic text-2xl sm:text-3xl font-bold text-white mb-2">
         12 Python Data Analytics Projects
       </h2>
-      <p class="text-amber-200 text-xs mb-8">Detailed case study summaries for each analytical repository[span_21](start_span)[span_21](end_span)[span_22](start_span)[span_22](end_span)[span_23](start_span)[span_23](end_span):</p>
+      <p class="text-amber-200 text-xs mb-8">Detailed case study summaries for each analytical repository:</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         
@@ -484,7 +472,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_24](start_span)[span_24](end_span):</strong> Predicting DVD rental durations and conducting hypothesis testing on feature significance using OLS regression and machine learning models in Python[span_25](start_span)[span_25](end_span).
+            <strong>Case Study:</strong> Predicting DVD rental durations and conducting hypothesis testing on feature significance using OLS regression and machine learning models in Python.
           </p>
         </div>
 
@@ -495,7 +483,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_26](start_span)[span_26](end_span):</strong> Unsupervised K-Means clustering and hypothesis testing on the Palmer Archipelago Antarctic Penguin dataset to identify structural species groupings[span_27](start_span)[span_27](end_span).
+            <strong>Case Study:</strong> Unsupervised K-Means clustering and hypothesis testing on the Palmer Archipelago Antarctic Penguin dataset to identify structural species groupings.
           </p>
         </div>
 
@@ -506,7 +494,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_28](start_span)[span_28](end_span):</strong> Statistical hypothesis testing and predictive modeling pipeline to evaluate agricultural yields, crop health, and environmental factors using Python[span_29](start_span)[span_29](end_span).
+            <strong>Case Study:</strong> Statistical hypothesis testing and predictive modeling pipeline to evaluate agricultural yields, crop health, and environmental factors using Python.
           </p>
         </div>
 
@@ -517,7 +505,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_30](start_span)[span_30](end_span):</strong> Statistical hypothesis testing to determine if more goals are scored in official FIFA World Cup women's soccer matches than men's using non-parametric inference[span_31](start_span)[span_31](end_span).
+            <strong>Case Study:</strong> Statistical hypothesis testing to determine if more goals are scored in official FIFA World Cup women's soccer matches than men's using non-parametric inference.
           </p>
         </div>
 
@@ -528,7 +516,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_32](start_span)[span_32](end_span):</strong> Evaluating predictive models to forecast auto insurance claims and optimize risk assessment accuracy using customer demographic data[span_33](start_span)[span_33](end_span).
+            <strong>Case Study:</strong> Evaluating predictive models to forecast auto insurance claims and optimize risk assessment accuracy using customer demographic data.
           </p>
         </div>
 
@@ -539,7 +527,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_34](start_span)[span_34](end_span):</strong> A Python-based data integration pipeline that extracts, merges, and cleans NYC Airbnb listing data across multiple file formats (.csv, .tsv, .xlsx)[span_35](start_span)[span_35](end_span).
+            <strong>Case Study:</strong> A Python-based data integration pipeline that extracts, merges, and cleans NYC Airbnb listing data across multiple file formats (.csv, .tsv, .xlsx).
           </p>
         </div>
 
@@ -550,7 +538,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_36](start_span)[span_36](end_span):</strong> Data preparation and storage optimization pipeline designed for Training Data Ltd. to process large customer datasets for job-seeking prediction models[span_37](start_span)[span_37](end_span).
+            <strong>Case Study:</strong> Data preparation and storage optimization pipeline designed for Training Data Ltd. to process large customer datasets for job-seeking prediction models.
           </p>
         </div>
 
@@ -561,7 +549,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_38](start_span)[span_38](end_span):</strong> Exploratory Data Analysis (EDA) of LAPD crime data using Python and Pandas to identify peak crime hours and high-risk nighttime locations[span_39](start_span)[span_39](end_span).
+            <strong>Case Study:</strong> Exploratory Data Analysis (EDA) of LAPD crime data using Python and Pandas to identify peak crime hours and high-risk nighttime locations.
           </p>
         </div>
 
@@ -572,7 +560,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_40](start_span)[span_40](end_span):</strong> Exploratory data analysis and visualization of Nobel Prize winners (1901–2023) using Python, pandas, and seaborn to uncover historical demographic trends[span_41](start_span)[span_41](end_span).
+            <strong>Case Study:</strong> Exploratory data analysis and visualization of Nobel Prize winners (1901–2023) using Python, pandas, and seaborn to uncover historical demographic trends.
           </p>
         </div>
 
@@ -583,7 +571,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_42](start_span)[span_42](end_span):</strong> Quantitative analysis of NYC public school SAT performance using Python and Pandas, examining subject benchmarks and regional score dispersion[span_43](start_span)[span_43](end_span).
+            <strong>Case Study:</strong> Quantitative analysis of NYC public school SAT performance using Python and Pandas, examining subject benchmarks and regional score dispersion.
           </p>
         </div>
 
@@ -594,7 +582,7 @@
             <span class="px-2 py-0.5 rounded bg-red-700 text-white font-bold text-[10px]">Python</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">
-            <strong>Case Study[span_44](start_span)[span_44](end_span):</strong> Exploratory data analysis project filtering and calculating duration and genre statistics for 1990s movies in Python[span_45](start_span)[span_45](end_span).
+            <strong>Case Study:</strong> Exploratory data analysis project filtering and calculating duration and genre statistics for 1990s movies in Python.
           </p>
         </div>
 
